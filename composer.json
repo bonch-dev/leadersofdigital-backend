@@ -8,7 +8,11 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2.5",
+        "php": "^7.2",
+        "ext-gd": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-redis": "^5.2",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
@@ -85,7 +89,8 @@
         ],
         "initialize": [
             "@php artisan migrate --force -n",
-            "@php artisan db:seed -n"
+            "@php artisan db:seed -n",
+            "@php artisan passport:install"
         ]
     }
 }
