@@ -1,0 +1,2 @@
+MAILTO=""
+* * * * * root su herokuishuser -c "/app/.heroku/php/bin/php /app/artisan schedule:run >> /app/cron.log"
