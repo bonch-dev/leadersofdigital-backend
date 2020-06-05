@@ -47,13 +47,7 @@ ingress:
   annotations:
     kubernetes.io/tls-acme: "true"
     kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/enable-cors: "false"
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      more_set_headers 'Access-Control-Allow-Methods: GET, PUT, POST, DELETE,PATCH, OPTIONS';
-      more_set_headers 'Access-Control-Allow-Origin: $http_origin';
-      more_set_headers 'Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,X-CurrentTimezone,X-CurrentCountry,If-Modified-Since,Cache-Control,Content-Type,Authorization';
-      more_set_headers 'Access-Control-Max-Age: 1728000';
-      more_set_headers 'Access-Control-Allow-Credentials: true'
+    nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
   modSecurity:
     enabled: false
