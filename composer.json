@@ -85,7 +85,7 @@
         ],
         "initialize": [
             "@php artisan migrate --force -n",
-            "@php artisan db:seed"
+            "@php artisan db:seed -n"
         ]
     }
 }
