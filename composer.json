@@ -19,8 +19,8 @@
         "socialiteproviders/vkontakte": "^4.1.0",
         "bonch.dev/package-laravel-tpl": "dev-master",
         "spatie/laravel-web-tinker": "^1.7.0",
-        "laravel/telescope": "^3.5.0"
-
+        "laravel/telescope": "^3.5.0",
+        "phpseclib/bcmath_compat": "1.0.4"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
