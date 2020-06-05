@@ -55,6 +55,8 @@ variables:
     --set application.redis_password=$CI_COMMIT_REF_SLUG
   "
 
+  TEST_DISABLED: "true"
+
 stages:
   - build-test
   - review
@@ -68,7 +70,6 @@ build:
   services:
     - docker:stable-dind
   script:
-    - echo $REDIS_URL
     - |
       if [[ -z "$CI_COMMIT_TAG" ]]; then
         export CI_APPLICATION_REPOSITORY=${CI_APPLICATION_REPOSITORY:-$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG}
@@ -98,35 +99,6 @@ build:
   only:
     - branches
     - tags
-
-test:
-  stage: build-test
-  image: gliderlabs/herokuish:latest
-  services:
-    - name: postgres:latest
-      alias: postgres
-    - name: redis:latest
-      alias: redis
-  script:
-    - export DB_CONNECTION="$DB_CONNECTION"
-    - export DB_PORT="$DB_PORT"
-    - |
-      if [[ "$CI_RUNNER_DESCRIPTION" != "Bonch.dev Kluster Runner" ]]; then
-        export DB_HOST="postgres"
-      else
-        export DB_HOST="localhost"
-      fi
-    - export DB_DATABASE="$POSTGRES_DB"
-    - export DB_PASSWORD="$POSTGRES_PASSWORD"
-    - export DB_USERNAME="$POSTGRES_USER"
-    - cp -R . /tmp/app
-    - /bin/herokuish buildpack test
-  only:
-    - branches
-    - tags
-  except:
-    variables:
-      - $TEST_DISABLED
 
 .auto-deploy:
   image: "registry.gitlab.com/gitlab-org/cluster-integration/auto-deploy-image:latest"
@@ -183,10 +155,9 @@ stop_review:
       - branches
       - tags
       - staging
+      - master
     kubernetes: active
   except:
-    refs:
-      - master
     variables:
       - $REVIEW_DISABLED
 
@@ -227,7 +198,6 @@ production:
     url: https://$CI_PROJECT_NAME.$KUBE_INGRESS_BASE_DOMAIN
   artifacts:
     paths: [environment_url.txt]
-  when: manual
   only:
     refs:
       - master
