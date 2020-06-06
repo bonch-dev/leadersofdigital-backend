@@ -64,7 +64,7 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'birthday_at' => $this->birthday_at,
-            'photo' => '',
+            'photo' => $this->photo,
             'vk' => $vk ? 'https://vk.com/id' . $vk->provider_user_id : '',
             $this->mergeWhen($this->relationLoaded('subscribers'), [
                 'influence' => $this->influence,
