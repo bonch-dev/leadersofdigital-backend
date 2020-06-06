@@ -119,7 +119,7 @@ class PostController extends Controller
      *
      * @param Request $request
      * @param Post $post
-     * @return bool
+     * @return array
      * @throws AuthorizationException
      */
     public function karmaUp(Request $request, Post $post)
@@ -137,7 +137,9 @@ class PostController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'karma' => $post->total_karma,
+        ];
     }
 
     /**
@@ -146,7 +148,7 @@ class PostController extends Controller
      *
      * @param Request $request
      * @param Post $post
-     * @return bool
+     * @return array
      * @throws AuthorizationException
      */
     public function karmaDown(Request $request, Post $post)
@@ -164,7 +166,9 @@ class PostController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'karma' => $post->total_karma,
+        ];
     }
 
     /**

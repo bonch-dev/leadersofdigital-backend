@@ -40,6 +40,15 @@ use Illuminate\Support\Carbon;
  */
 class Comment extends Model
 {
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('order', function (Builder $builder) {
+            $builder->orderBy('created_at', 'desc');
+        });
+    }
+
     protected $with = [
         'user',
     ];

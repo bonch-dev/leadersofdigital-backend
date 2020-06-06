@@ -56,16 +56,16 @@
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/provider/vkontakte?callback_url=quibusdam" \
+    -G "http://localhost/provider/vkontakte?callback_url=molestias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/provider/vkontakte"
 );
 
 let params = {
-    "callback_url": "quibusdam",
+    "callback_url": "molestias",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -73,7 +73,7 @@ Object.keys(params)
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -132,7 +132,7 @@ fetch(url, {
     -G "http://localhost/provider/1/callback" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/provider/1/callback"
 );
@@ -140,7 +140,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -170,7 +170,7 @@ fetch(url, {
     "http://localhost/api/comments/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/comments/1/karmaUp"
 );
@@ -178,7 +178,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -204,7 +204,7 @@ fetch(url, {
     "http://localhost/api/comments/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/comments/1/karmaDown"
 );
@@ -212,7 +212,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -240,7 +240,7 @@ fetch(url, {
     "http://localhost/api/events/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -250,7 +250,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -271,6 +271,7 @@ fetch(url, {
     "data": {
         "id": null,
         "user": {
+            "id": 19,
             "name": "Gosha Kargin",
             "birthday_at": null,
             "photo": "",
@@ -317,7 +318,7 @@ fetch(url, {
     "http://localhost/api/events/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/karmaUp"
 );
@@ -325,7 +326,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -351,7 +352,7 @@ fetch(url, {
     "http://localhost/api/events/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/karmaDown"
 );
@@ -359,7 +360,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -385,7 +386,7 @@ fetch(url, {
     "http://localhost/api/events/1/rate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/rate"
 );
@@ -393,7 +394,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -419,7 +420,7 @@ fetch(url, {
     "http://localhost/api/events/1/unrate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/unrate"
 );
@@ -427,7 +428,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -437,9 +438,11 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
-<pre><code class="language-json">1</code></pre>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\RateItem]."
+}</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/unrate</code></p>
 <!-- END_02e29414b7211eeccb73592e76801925 -->
@@ -452,7 +455,7 @@ fetch(url, {
     -G "http://localhost/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events"
 );
@@ -460,7 +463,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -475,94 +478,19 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": [
         {
-            "id": 1,
-            "title": "Gryphon. 'Then, you know,' said Alice, who felt very lonely and low-spirited. In a minute or two, and the arm that was linked into hers began to cry again. 'You ought to eat the comfits: this caused.",
-            "description": "We must have imitated somebody else's hand,' said the cook. The King looked anxiously at the March Hare. Visit either you like: they're both mad.' 'But I don't know,' he went on, 'and most things.",
-            "phone": "923.725.6324 x80448",
-            "place": "2019 Abbott Glens\nLornastad, AL 75965",
-            "user": {
-                "name": "Mr. Lester Maggio",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 806,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": true,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 1,
-                    "user": {
-                        "name": "Mr. Lester Maggio",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 806,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 1,
-                    "karmed": 1
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "title": "I!' he replied. 'We quarrelled last March--just before HE went mad, you know--' (pointing with his tea spoon at the righthand bit again, and the pair of the ground, Alice soon began talking to him,'.",
-            "description": "Cheshire Cat: now I shall have somebody to talk about her repeating 'YOU ARE OLD, FATHER WILLIAM,' to the porpoise, \"Keep back, please: we don't want to be?' it asked. 'Oh, I'm not looking for eggs.",
-            "phone": "+1.763.337.6641",
-            "place": "3025 Domenico Green\nDickiburgh, WA 11466-9400",
-            "user": {
-                "name": "Prof. Kelly Hagenes",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 519,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 2,
-                    "user": {
-                        "name": "Prof. Kelly Hagenes",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 519,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
             "id": 3,
-            "title": "The Mouse looked at Alice. 'It must have a prize herself, you know,' the Hatter with a sudden leap out of a feather flock together.\"' 'Only mustard isn't a letter, after all: it's a French mouse.",
-            "description": "Dinah my dear! Let this be a very long silence, broken only by an occasional exclamation of 'Hjckrrh!' from the Queen said to herself, and shouted out, 'You'd better not do that again!' which.",
-            "phone": "986.884.1906 x79494",
-            "place": "263 Fletcher Field Suite 566\nSawaynport, FL 34914-6718",
+            "title": "Alice, she went round the table, but it all came different!' the Mock Turtle persisted. 'How COULD he turn them out of sight, he said to herself. At this the whole window!' 'Sure, it does, yer.",
+            "description": "She was walking hand in hand, in couples: they were trying which word sounded best. Some of the moment they saw her, they hurried back to my right size to do that,' said the King. (The jury all.",
+            "phone": "693-664-6659 x09180",
+            "place": "3640 DuBuque Tunnel\nWest Jarrettown, HI 10673",
             "user": {
-                "name": "Elmer Leannon",
+                "id": 16,
+                "name": "Ms. Candida Halvorson",
                 "birthday_at": null,
                 "photo": "",
                 "vk": "",
                 "rank": 1,
-                "karma": 604,
+                "karma": 893,
                 "entities": []
             },
             "karma": 0,
@@ -574,12 +502,13 @@ fetch(url, {
                 {
                     "id": 3,
                     "user": {
-                        "name": "Elmer Leannon",
+                        "id": 16,
+                        "name": "Ms. Candida Halvorson",
                         "birthday_at": null,
                         "photo": "",
                         "vk": "",
                         "rank": 1,
-                        "karma": 604,
+                        "karma": 893,
                         "entities": []
                     },
                     "text": "random_text",
@@ -590,17 +519,18 @@ fetch(url, {
         },
         {
             "id": 4,
-            "title": "Lizard, who seemed to be a letter, written by the Hatter, and, just as I do,' said the Mock Turtle. 'No, no! The adventures first,' said the Duchess, 'as pigs have to fly; and the baby violently up.",
-            "description": "So you see, as she swam about, trying to put his shoes off. 'Give your evidence,' said the March Hare. 'Sixteenth,' added the Hatter, with an M--' 'Why with an M--' 'Why with an M, such as.",
-            "phone": "560-379-4161",
-            "place": "99349 Moshe Corners Suite 913\nPort Avisborough, NM 54312",
+            "title": "But do cats eat bats? Do cats eat bats, I wonder?' Alice guessed in a rather offended tone, 'was, that the meeting adjourn, for the Duchess sang the second time round, she came up to Alice, they all.",
+            "description": "And they pinched it on both sides of it; so, after hunting all about it!' and he went on, half to itself, 'Oh dear! Oh dear! I wish you wouldn't squeeze so.' said the King said gravely, 'and go on.",
+            "phone": "918-937-0338",
+            "place": "765 Keeling Mission\nSouth Camillastad, GA 63287",
             "user": {
-                "name": "Peyton Roberts DDS",
+                "id": 13,
+                "name": "Dr. Ola Schiller",
                 "birthday_at": null,
                 "photo": "",
                 "vk": "",
                 "rank": 1,
-                "karma": 582,
+                "karma": 341,
                 "entities": []
             },
             "karma": 0,
@@ -612,12 +542,13 @@ fetch(url, {
                 {
                     "id": 4,
                     "user": {
-                        "name": "Peyton Roberts DDS",
+                        "id": 13,
+                        "name": "Dr. Ola Schiller",
                         "birthday_at": null,
                         "photo": "",
                         "vk": "",
                         "rank": 1,
-                        "karma": 582,
+                        "karma": 341,
                         "entities": []
                     },
                     "text": "random_text",
@@ -628,17 +559,18 @@ fetch(url, {
         },
         {
             "id": 5,
-            "title": "But her sister was reading, but it is.' 'Then you should say \"With what porpoise?\"' 'Don't you mean that you never to lose YOUR temper!' 'Hold your tongue!' said the Hatter. He came in sight of the.",
-            "description": "As for pulling me out of sight; and an Eaglet, and several other curious creatures. Alice led the way, and nothing seems to grin, How neatly spread his claws, And welcome little fishes in With.",
-            "phone": "1-249-246-8079 x75483",
-            "place": "590 Rolfson Spurs Suite 832\nOkunevamouth, UT 25244-8010",
+            "title": "How the Owl had the best of educations--in fact, we went to him,' the Mock Turtle in the window, I only knew the name of the well, and noticed that they would go, and broke to pieces against one of.",
+            "description": "I think I can say.' This was not here before,' said Alice,) and round the table, but it just now.' 'It's the thing at all. 'But perhaps he can't help it,' said Alice, 'we learned French and music.'.",
+            "phone": "525.896.1456",
+            "place": "9263 Bruen Mountain Suite 777\nNorth Hymanmouth, RI 99325-1651",
             "user": {
-                "name": "Mr. Sigmund Schumm II",
+                "id": 6,
+                "name": "Prof. Haskell Thompson I",
                 "birthday_at": null,
                 "photo": "",
                 "vk": "",
                 "rank": 1,
-                "karma": 336,
+                "karma": 407,
                 "entities": []
             },
             "karma": 0,
@@ -650,12 +582,93 @@ fetch(url, {
                 {
                     "id": 5,
                     "user": {
-                        "name": "Mr. Sigmund Schumm II",
+                        "id": 6,
+                        "name": "Prof. Haskell Thompson I",
                         "birthday_at": null,
                         "photo": "",
                         "vk": "",
                         "rank": 1,
-                        "karma": 336,
+                        "karma": 407,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "I don't understand. Where did they live at the Mouse's tail; 'but why do you know what \"it\" means well enough, when I got up this morning? I almost think I can guess that,' she added in an offended.",
+            "description": "Alice, feeling very glad to get hold of its mouth, and its great eyes half shut. This seemed to rise like a stalk out of the room. The cook threw a frying-pan after her as she swam lazily about in a.",
+            "phone": "(460) 532-0462",
+            "place": "87201 Kessler Stream\nFeeneyfort, GA 65472-2425",
+            "user": {
+                "id": 4,
+                "name": "Dasia Hilpert DVM",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 755,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 1,
+                    "user": {
+                        "id": 4,
+                        "name": "Dasia Hilpert DVM",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 755,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Pigeon, raising its voice to its children, 'Come away, my dears! It's high time you were INSIDE, you might like to see how he can thoroughly enjoy The pepper when he finds out who I am! But I'd.",
+            "description": "ME' beautifully printed on it in large letters. It was so much frightened to say anything. 'Why,' said the Queen. 'Sentence first--verdict afterwards.' 'Stuff and nonsense!' said Alice very meekly.",
+            "phone": "871-824-2434 x620",
+            "place": "697 Cole Dale\nNorth Devin, KY 28343",
+            "user": {
+                "id": 18,
+                "name": "Earline Orn",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 667,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 2,
+                    "user": {
+                        "id": 18,
+                        "name": "Earline Orn",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 667,
                         "entities": []
                     },
                     "text": "random_text",
@@ -694,7 +707,7 @@ fetch(url, {
     "http://localhost/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -704,7 +717,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -789,7 +802,7 @@ fetch(url, {
     -G "http://localhost/api/events/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1"
 );
@@ -797,7 +810,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -812,39 +825,41 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": {
         "id": 1,
-        "title": "Gryphon. 'Then, you know,' said Alice, who felt very lonely and low-spirited. In a minute or two, and the arm that was linked into hers began to cry again. 'You ought to eat the comfits: this caused.",
-        "description": "We must have imitated somebody else's hand,' said the cook. The King looked anxiously at the March Hare. Visit either you like: they're both mad.' 'But I don't know,' he went on, 'and most things.",
-        "phone": "923.725.6324 x80448",
-        "place": "2019 Abbott Glens\nLornastad, AL 75965",
+        "title": "I don't understand. Where did they live at the Mouse's tail; 'but why do you know what \"it\" means well enough, when I got up this morning? I almost think I can guess that,' she added in an offended.",
+        "description": "Alice, feeling very glad to get hold of its mouth, and its great eyes half shut. This seemed to rise like a stalk out of the room. The cook threw a frying-pan after her as she swam lazily about in a.",
+        "phone": "(460) 532-0462",
+        "place": "87201 Kessler Stream\nFeeneyfort, GA 65472-2425",
         "user": {
-            "name": "Mr. Lester Maggio",
+            "id": 4,
+            "name": "Dasia Hilpert DVM",
             "birthday_at": null,
             "photo": "",
             "vk": "",
             "rank": 1,
-            "karma": 806,
+            "karma": 755,
             "entities": []
         },
         "karma": 0,
         "karmed": 0,
         "rate": null,
-        "rated": true,
+        "rated": false,
         "photos": [],
         "comments": [
             {
                 "id": 1,
                 "user": {
-                    "name": "Mr. Lester Maggio",
+                    "id": 4,
+                    "name": "Dasia Hilpert DVM",
                     "birthday_at": null,
                     "photo": "",
                     "vk": "",
                     "rank": 1,
-                    "karma": 806,
+                    "karma": 755,
                     "entities": []
                 },
                 "text": "random_text",
-                "karma": 1,
-                "karmed": 1
+                "karma": 0,
+                "karmed": 0
             }
         ]
     }
@@ -862,7 +877,7 @@ fetch(url, {
     "http://localhost/api/events/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -872,7 +887,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -953,7 +968,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1/rate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1/rate"
 );
@@ -961,7 +976,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -989,7 +1004,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1/unrate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1/unrate"
 );
@@ -997,7 +1012,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1024,7 +1039,7 @@ fetch(url, {
     -G "http://localhost/api/initiatives" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives"
 );
@@ -1032,7 +1047,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1075,7 +1090,7 @@ fetch(url, {
     "http://localhost/api/initiatives" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1085,7 +1100,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -1113,6 +1128,7 @@ fetch(url, {
     "data": {
         "id": null,
         "user": {
+            "id": 19,
             "name": "Gosha Kargin",
             "birthday_at": null,
             "photo": "",
@@ -1220,7 +1236,7 @@ fetch(url, {
     -G "http://localhost/api/initiatives/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1"
 );
@@ -1228,7 +1244,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1256,7 +1272,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1266,7 +1282,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -1382,7 +1398,7 @@ fetch(url, {
     "http://localhost/api/media" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/media"
@@ -1391,7 +1407,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1443,7 +1459,7 @@ fetch(url, {
     "http://localhost/api/media" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/media"
@@ -1452,7 +1468,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1511,7 +1527,7 @@ fetch(url, {
     -G "http://localhost/sanctum/csrf-cookie" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/sanctum/csrf-cookie"
 );
@@ -1519,7 +1535,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1531,6 +1547,474 @@ fetch(url, {
 <h3>HTTP Request</h3>
 <p><code>GET sanctum/csrf-cookie</code></p>
 <!-- END_4dfafe7f87ec132be3c8990dd1fa9078 -->
+<!-- START_00fdf626b100d30bcd150746166ee0e9 -->
+<h2>Store comment about event</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/questions/1/comment" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"text":"Bla-bla-bla-bla-string"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions/1/comment"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "text": "Bla-bla-bla-bla-string"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Question] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/questions/{question}/comment</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text</code></td>
+<td>string</td>
+<td>required</td>
+<td>Text of comment.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_00fdf626b100d30bcd150746166ee0e9 -->
+<!-- START_f9e55b88c46b05407b92e164b670c331 -->
+<h2>Karma up event</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/questions/1/karmaUp" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions/1/karmaUp"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Question] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/questions/{question}/karmaUp</code></p>
+<!-- END_f9e55b88c46b05407b92e164b670c331 -->
+<!-- START_e3077b5fbf128812956b6ccdaf1e1ddc -->
+<h2>Karma down event</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/questions/1/karmaDown" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions/1/karmaDown"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Question] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/questions/{question}/karmaDown</code></p>
+<!-- END_e3077b5fbf128812956b6ccdaf1e1ddc -->
+<!-- START_c0865094d4e44476b8ce26019c285d2e -->
+<h2>Answer to question</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/questions/1/answer" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"question_item_id":1}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions/1/answer"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "question_item_id": 1
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Question] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/questions/{question}/answer</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>question_item_id</code></td>
+<td>integer</td>
+<td>required</td>
+<td>QuestionItem for we vote.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_c0865094d4e44476b8ce26019c285d2e -->
+<!-- START_de9212b4bd813e07f73b53cc3bd13088 -->
+<h2>Display a listing of the events.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/questions" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": [],
+    "links": {
+        "first": "http:\/\/localhost\/api\/questions?page=1",
+        "last": "http:\/\/localhost\/api\/questions?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": null,
+        "last_page": 1,
+        "path": "http:\/\/localhost\/api\/questions",
+        "per_page": 15,
+        "to": null,
+        "total": 0
+    }
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/questions</code></p>
+<!-- END_de9212b4bd813e07f73b53cc3bd13088 -->
+<!-- START_c523dae70f6c4b21420696974da0faea -->
+<h2>Store a newly created event in storage.</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/questions" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"title":"My cool event","description":"We will eat bubblegum","end_at":"2020-06-08 20:20:00","items":[{"text":"Goot text"}]}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "title": "My cool event",
+    "description": "We will eat bubblegum",
+    "end_at": "2020-06-08 20:20:00",
+    "items": [
+        {
+            "text": "Goot text"
+        }
+    ]
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/questions</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>required</td>
+<td>Title of event.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>required</td>
+<td>Description of event.</td>
+</tr>
+<tr>
+<td><code>end_at</code></td>
+<td>date</td>
+<td>optional</td>
+<td>Date, when question will end.</td>
+</tr>
+<tr>
+<td><code>items</code></td>
+<td>array</td>
+<td>optional</td>
+<td>Array of items of questions.</td>
+</tr>
+<tr>
+<td><code>items.*.text</code></td>
+<td>string</td>
+<td>optional</td>
+<td>Text of item question.</td>
+</tr>
+<tr>
+<td><code>photos</code></td>
+<td>array</td>
+<td>optional</td>
+<td>Array of used uploaded photos.</td>
+</tr>
+<tr>
+<td><code>photos.*</code></td>
+<td>integer</td>
+<td>optional</td>
+<td>Id of uploaded photo.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_c523dae70f6c4b21420696974da0faea -->
+<!-- START_f605dcf2ca92a58323db87f649ac1dae -->
+<h2>Display the specified event.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/questions/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Question] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/questions/{question}</code></p>
+<!-- END_f605dcf2ca92a58323db87f649ac1dae -->
+<!-- START_1bebccad423fb430073b434655c9df9e -->
+<h2>Update the specified event in storage.</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT \
+    "http://localhost/api/questions/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"title":"My cool event","description":"We will eat bubblegum"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/questions/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "title": "My cool event",
+    "description": "We will eat bubblegum"
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Question] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/questions/{question}</code></p>
+<p><code>PATCH api/questions/{question}</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>required</td>
+<td>Title of event.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>required</td>
+<td>Description of event.</td>
+</tr>
+<tr>
+<td><code>photos</code></td>
+<td>array</td>
+<td>optional</td>
+<td>Array of used uploaded photos.</td>
+</tr>
+<tr>
+<td><code>photos.*</code></td>
+<td>integer</td>
+<td>optional</td>
+<td>Id of uploaded photo.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_1bebccad423fb430073b434655c9df9e -->
 <h1>Post</h1>
 <p>Class PostController</p>
 <!-- START_2e801dd71d2d900d8da8bd55f490d9a8 -->
@@ -1543,7 +2027,7 @@ fetch(url, {
     "http://localhost/api/posts/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1553,7 +2037,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -1605,7 +2089,7 @@ fetch(url, {
     "http://localhost/api/posts/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1/karmaUp"
 );
@@ -1613,7 +2097,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1641,7 +2125,7 @@ fetch(url, {
     "http://localhost/api/posts/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1/karmaDown"
 );
@@ -1649,7 +2133,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1676,7 +2160,7 @@ fetch(url, {
     -G "http://localhost/api/posts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts"
 );
@@ -1684,7 +2168,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1727,7 +2211,7 @@ fetch(url, {
     "http://localhost/api/posts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"title":"My cool post","text":"I eating bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1737,7 +2221,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -1757,8 +2241,9 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "id": 5,
+        "id": 2,
         "user": {
+            "id": 19,
             "name": "Gosha Kargin",
             "birthday_at": null,
             "photo": "",
@@ -1823,7 +2308,7 @@ fetch(url, {
     -G "http://localhost/api/posts/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1"
 );
@@ -1831,7 +2316,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1859,7 +2344,7 @@ fetch(url, {
     "http://localhost/api/posts/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
     -d '{"title":"My cool post","text":"I eating bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1869,7 +2354,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 let body = {
@@ -1943,7 +2428,7 @@ fetch(url, {
     -G "http://localhost/api/users/me" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/users/me"
 );
@@ -1951,7 +2436,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -1965,6 +2450,7 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
+        "id": 19,
         "name": "Gosha Kargin",
         "birthday_at": null,
         "photo": "",
@@ -1987,7 +2473,7 @@ fetch(url, {
     -G "http://localhost/api/users/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/users/1"
 );
@@ -1995,7 +2481,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
 };
 
 fetch(url, {
@@ -2009,25 +2495,15 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Mr. Sigmund Schumm II",
+        "id": 1,
+        "name": "Kavon Kunde",
         "birthday_at": null,
         "photo": "",
         "vk": "",
         "influence": 3,
         "rank": 1,
-        "karma": 336,
-        "entities": [
-            {
-                "id": 5,
-                "type": "event",
-                "user_id": 1,
-                "title": "But her sister was reading, but it is.' 'Then you should say \"With what porpoise?\"' 'Don't you mean that you never to lose YOUR temper!' 'Hold your tongue!' said the Hatter. He came in sight of the.",
-                "description": "As for pulling me out of sight; and an Eaglet, and several other curious creatures. Alice led the way, and nothing seems to grin, How neatly spread his claws, And welcome little fishes in With.",
-                "karma": 0,
-                "rate": 0,
-                "created_at": "2020-06-06T15:53:50.000000Z"
-            }
-        ]
+        "karma": 926,
+        "entities": []
     }
 }</code></pre>
 <h3>HTTP Request</h3>

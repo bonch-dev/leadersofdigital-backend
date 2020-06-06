@@ -52,6 +52,15 @@ use Optix\Media\HasMedia;
  */
 class Event extends Model
 {
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('order', function (Builder $builder) {
+            $builder->orderBy('created_at', 'desc');
+        });
+    }
+
     use HasMedia;
 
     protected $with = [

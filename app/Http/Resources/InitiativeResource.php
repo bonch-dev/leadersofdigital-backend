@@ -42,7 +42,7 @@ class InitiativeResource extends JsonResource
             'geography' => $this->geography,
             'result' => $this->result,
             'additional' => $this->getAttribute('additional'),
-            'rate' => $this->rate_items_count,
+            'rate' => $this->rate_items()->count(),
             'rated' => $rated,
             'status' => $this->status,
         ];

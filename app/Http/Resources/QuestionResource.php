@@ -2,16 +2,16 @@
 
 namespace App\Http\Resources;
 
-use App\Event;
+use App\Question;
 use App\User;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * Class EventResource
+ * Class QuestionResource
  * @package App\Http\Resources
- * @mixin Event
+ * @mixin Question
  */
-class EventResource extends JsonResource
+class QuestionResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -24,7 +24,7 @@ class EventResource extends JsonResource
         /** @var User $user */
         $user = $request->user('api');
         $karmed = 0;
-        $rated = false;
+        $voted = false;
 
         if ($user) {
             $karma = $this->karma_items()->firstWhere('user_id', $user->id);
@@ -33,24 +33,21 @@ class EventResource extends JsonResource
                 $karmed = $karma->value;
             }
 
-            $rate = $this->rate_items()->firstWhere('user_id', $user->id);
+            $rate = $this->answers()->firstWhere('user_id', $user->id);
 
-            $rated = ! is_null($rate);
+            $voted = ! is_null($rate);
         }
 
         return [
-            'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
-            'phone' => $this->phone,
-            'place' => $this->place,
-            'user' => UserResource::make($this->user),
             'karma' => $this->total_karma,
             'karmed' => $karmed,
-            'rate' => $this->rate_items()->count(),
-            'rated' => $rated,
-            'photos' => MediaResource::collection($this->media),
-            'comments' => CommentResource::collection($this->comments)
+            'votes_count' => $this->votes_count,
+            'votes_sum' => $this->votes_sum,
+            'voted' => $voted,
+            'comments' => CommentResource::collection($this->comments),
+            'question_items' => QuestionItemResource::collection($this->question_items)
         ];
     }
 }

@@ -109,3 +109,15 @@ Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4
 Content-Type: application/json
 
 ###
+# curl -X POST
+#    "http://localhost/api/events/1/unrate"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
+POST http://127.0.0.1:8000/api/events/1/karmaDown
+Accept: application/json
+Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB
+Content-Type: application/json
+
+###
+

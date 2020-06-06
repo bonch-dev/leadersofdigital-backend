@@ -154,7 +154,7 @@ return [
                 'headers' => [
                     'Content-Type' => 'application/json',
                     'Accept' => 'application/json',
-                    'Authorization' => 'Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo',
+                    'Authorization' => 'Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB',
                     // 'Api-Version' => 'v2',
                 ],
 

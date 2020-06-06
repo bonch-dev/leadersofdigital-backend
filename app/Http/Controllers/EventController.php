@@ -130,7 +130,7 @@ class EventController extends Controller
      *
      * @param Request $request
      * @param Event $event
-     * @return bool
+     * @return array
      * @throws AuthorizationException
      */
     public function karmaUp(Request $request, Event $event)
@@ -148,7 +148,9 @@ class EventController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'karma' => $event->total_karma,
+        ];
     }
 
     /**
@@ -157,7 +159,7 @@ class EventController extends Controller
      *
      * @param Request $request
      * @param Event $event
-     * @return bool
+     * @return array
      * @throws AuthorizationException
      */
     public function karmaDown(Request $request, Event $event)
@@ -175,7 +177,9 @@ class EventController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'karma' => $event->total_karma,
+        ];
     }
 
     /**
@@ -184,7 +188,7 @@ class EventController extends Controller
      *
      * @param Request $request
      * @param Event $event
-     * @return bool
+     * @return string[]
      * @throws AuthorizationException
      */
     public function rate(Request $request, Event $event)
@@ -194,11 +198,14 @@ class EventController extends Controller
         $user = $request->user('api');
 
         /** @var RateItem $karmaItem */
-        $karmaItem = $event->rate_items()->firstOrCreate(
+        $event->rate_items()->firstOrCreate(
             ['user_id' => $user->id]
         );
 
-        return true;
+        return [
+            'message' => "rated event $event->id successfuly",
+            'rate' => $event->rate_items()->count(),
+        ];
     }
 
     /**
@@ -207,7 +214,7 @@ class EventController extends Controller
      *
      * @param Request $request
      * @param Event $event
-     * @return bool
+     * @return string[]
      * @throws Exception
      */
     public function unrate(Request $request, Event $event)
@@ -221,7 +228,10 @@ class EventController extends Controller
 
         $rateItem->delete();
 
-        return true;
+        return [
+            'message' => "unrated event $event->id successfuly",
+            'rate' => $event->rate_items()->count(),
+        ];
     }
 
     /**

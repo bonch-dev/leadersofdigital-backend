@@ -21,7 +21,7 @@ class CommentController extends Controller
      *
      * @param Request $request
      * @param Comment $comment
-     * @return bool
+     * @return array
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function karmaUp(Request $request, Comment $comment)
@@ -39,7 +39,9 @@ class CommentController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'karma' => $comment->total_karma,
+        ];
     }
 
     /**
@@ -48,7 +50,7 @@ class CommentController extends Controller
      *
      * @param Request $request
      * @param Comment $comment
-     * @return bool
+     * @return array
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function karmaDown(Request $request, Comment $comment)
@@ -66,6 +68,8 @@ class CommentController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'karma' => $comment->total_karma,
+        ];
     }
 }

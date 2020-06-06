@@ -99,7 +99,7 @@ class InitiativeController extends Controller
      *
      * @param Request $request
      * @param Initiative $initiative
-     * @return bool
+     * @return array
      * @throws AuthorizationException
      */
     public function rate(Request $request, Initiative $initiative)
@@ -115,7 +115,10 @@ class InitiativeController extends Controller
 
         $karmaItem->save();
 
-        return true;
+        return [
+            'message' => "rated initiative $initiative->id successfully",
+            'rate' => $initiative->rate_items()->count(),
+        ];
     }
 
     /**
@@ -124,7 +127,7 @@ class InitiativeController extends Controller
      *
      * @param Request $request
      * @param Initiative $initiative
-     * @return bool
+     * @return array
      * @throws Exception
      */
     public function unrate(Request $request, Initiative $initiative)
@@ -138,7 +141,10 @@ class InitiativeController extends Controller
 
         $rateItem->delete();
 
-        return true;
+        return [
+            'message' => "unrated initiative $initiative->id successfully",
+            'rate' => $initiative->rate_items()->count(),
+        ];
     }
 
     /**

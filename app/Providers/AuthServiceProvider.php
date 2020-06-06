@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Event;
+use App\Policies\QuestionPolicy;
+use App\Question;
 use App\User;
 use App\Initiative;
 use App\Post;
@@ -29,6 +31,7 @@ class AuthServiceProvider extends ServiceProvider
         Initiative::class => InitiativePolicy::class,
         Post::class => PostPolicy::class,
         Comment::class => CommentPolicy::class,
+        Question::class => QuestionPolicy::class,
     ];
 
     /**

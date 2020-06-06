@@ -46,6 +46,15 @@ Route::prefix('posts')->group(function () {
 Route::apiResource('posts', 'PostController')
     ->except('destroy');
 
+Route::prefix('questions')->group(function () {
+    Route::post('{question}/comment', 'QuestionController@comment');
+    Route::post('{question}/karmaUp', 'QuestionController@karmaUp');
+    Route::post('{question}/karmaDown', 'QuestionController@karmaDown');
+    Route::post('{question}/answer', 'QuestionController@answer');
+});
+Route::apiResource('questions', 'QuestionController')
+    ->except('destroy');
+
 Route::prefix('comments')->group(function () {
     Route::post('{comment}/karmaUp', 'CommentController@karmaUp');
     Route::post('{comment}/karmaDown', 'CommentController@karmaDown');
