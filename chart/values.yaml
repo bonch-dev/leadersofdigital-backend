@@ -21,11 +21,11 @@ application:
     - name: APP_NAME
       value: "Единство"
     - name: VKONTAKTE_KEY
-      value: "kUdEtA1qyBB1wrBz24uO"
+      value: "7500406"
     - name: VKONTAKTE_SECRET
-      value: "8a32b4ee8a32b4ee8a32b4ee268a40c69888a328a32b4eed4e8233718fd5ec9d2ad06ed"
+      value: "kUdEtA1qyBB1wrBz24uO"
     - name: VKONTAKTE_REDIRECT_URI
-      value: "https://leadersofdigital-backend.server.bonch.dev/api/provider/vkontakte/redirect"
+      value: "https://leadersofdigital-backend.server.bonch.dev/provider/vkontakte/callback"
 hpa:
   enabled: false
   minReplicas: 1
