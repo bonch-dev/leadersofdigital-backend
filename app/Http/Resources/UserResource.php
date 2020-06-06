@@ -61,6 +61,7 @@ class UserResource extends JsonResource
         })->values();
 
         return [
+            'id' => $this->id,
             'name' => $this->name,
             'birthday_at' => $this->birthday_at,
             'photo' => '',
