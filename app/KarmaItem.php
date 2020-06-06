@@ -2,9 +2,13 @@
 
 namespace App;
 
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
+use Log;
 
 /**
  * App\KarmaItem
@@ -13,22 +17,22 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property int $user_id
  * @property string $karmable_type
  * @property int $karmable_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $karmable
- * @property-read \App\User $user
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereKarmableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereKarmableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereUserId($value)
- * @mixin \Eloquent
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Model|Eloquent $karmable
+ * @property-read User $user
+ * @method static Builder|KarmaItem newModelQuery()
+ * @method static Builder|KarmaItem newQuery()
+ * @method static Builder|KarmaItem query()
+ * @method static Builder|KarmaItem whereCreatedAt($value)
+ * @method static Builder|KarmaItem whereId($value)
+ * @method static Builder|KarmaItem whereKarmableId($value)
+ * @method static Builder|KarmaItem whereKarmableType($value)
+ * @method static Builder|KarmaItem whereUpdatedAt($value)
+ * @method static Builder|KarmaItem whereUserId($value)
+ * @mixin Eloquent
  * @property int $value
- * @method static \Illuminate\Database\Eloquent\Builder|\App\KarmaItem whereValue($value)
+ * @method static Builder|KarmaItem whereValue($value)
  */
 class KarmaItem extends Model
 {
@@ -59,7 +63,7 @@ class KarmaItem extends Model
             $user = $karma->karmable->user;
 
             if (! $user) {
-                \Log::critical('KarmaItem saved, but target user doesn\'t found!', [
+                Log::critical('KarmaItem saved, but target user doesn\'t found!', [
                     'karma_item' => $karma,
                 ]);
 

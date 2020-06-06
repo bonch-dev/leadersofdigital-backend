@@ -2,10 +2,14 @@
 
 namespace App;
 
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Comment
@@ -15,23 +19,24 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property string $commentable_type
  * @property int $commentable_id
  * @property string $text
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $commentable
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\KarmaItem[] $karma_items
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Model|Eloquent $commentable
+ * @property-read Collection|KarmaItem[] $karma_items
  * @property-read int|null $karma_items_count
- * @property-read \App\User|null $user
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereCommentableId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereCommentableType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereText($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereUserId($value)
- * @mixin \Eloquent
+ * @property-read User|null $user
+ * @method static Builder|Comment newModelQuery()
+ * @method static Builder|Comment newQuery()
+ * @method static Builder|Comment query()
+ * @method static Builder|Comment whereCommentableId($value)
+ * @method static Builder|Comment whereCommentableType($value)
+ * @method static Builder|Comment whereCreatedAt($value)
+ * @method static Builder|Comment whereId($value)
+ * @method static Builder|Comment whereText($value)
+ * @method static Builder|Comment whereUpdatedAt($value)
+ * @method static Builder|Comment whereUserId($value)
+ * @mixin Eloquent
+ * @property-read int $total_karma
  */
 class Comment extends Model
 {
@@ -47,6 +52,11 @@ class Comment extends Model
     public function karma_items(): MorphMany
     {
         return $this->morphMany(KarmaItem::class, 'karmable');
+    }
+
+    public function getTotalKarmaAttribute(): int
+    {
+        return $this->karma_items()->sum('value');
     }
 
     public function commentable(): MorphTo

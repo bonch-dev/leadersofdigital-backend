@@ -2,9 +2,13 @@
 
 namespace App;
 
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Carbon;
 use Optix\Media\HasMedia;
 
 /**
@@ -12,39 +16,39 @@ use Optix\Media\HasMedia;
  *
  * @property int $id
  * @property int|null $user_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string $name
  * @property string $description
  * @property string $phone
  * @property string|null $place
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Comment[] $comments
+ * @property-read Collection|Comment[] $comments
  * @property-read int|null $comments_count
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\KarmaItem[] $karma_items
+ * @property-read Collection|KarmaItem[] $karma_items
  * @property-read int|null $karma_items_count
- * @property-read \App\User|null $user
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event wherePhone($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event wherePlace($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereUserId($value)
- * @mixin \Eloquent
+ * @property-read User|null $user
+ * @method static Builder|Event newModelQuery()
+ * @method static Builder|Event newQuery()
+ * @method static Builder|Event query()
+ * @method static Builder|Event whereCreatedAt($value)
+ * @method static Builder|Event whereDescription($value)
+ * @method static Builder|Event whereId($value)
+ * @method static Builder|Event whereName($value)
+ * @method static Builder|Event wherePhone($value)
+ * @method static Builder|Event wherePlace($value)
+ * @method static Builder|Event whereUpdatedAt($value)
+ * @method static Builder|Event whereUserId($value)
+ * @mixin Eloquent
  * @property string $status
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereStatus($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Media[] $media
+ * @method static Builder|Event whereStatus($value)
+ * @property-read Collection|Media[] $media
  * @property-read int|null $media_count
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\RateItem[] $rate_items
+ * @property-read Collection|RateItem[] $rate_items
  * @property-read int|null $rate_items_count
  * @property string $title
  * @property-read int $total_karma
  * @property-read int $total_rate
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Event whereTitle($value)
+ * @method static Builder|Event whereTitle($value)
  */
 class Event extends Model
 {

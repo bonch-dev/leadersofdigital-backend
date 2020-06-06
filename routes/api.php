@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::post('media', 'MediaController@store');
 Route::put('media', 'MediaController@storeMany');
 
-Route::get('users/{user}', 'UserController@show');
 Route::get('users/me', 'UserController@me');
+Route::get('users/{user}', 'UserController@show');
 
 Route::prefix('events')->group(function () {
     Route::post('{event}/comment', 'EventController@comment');

@@ -33,6 +33,7 @@ use Optix\Media\HasMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereUserId($value)
  * @mixin \Eloquent
+ * @property-read int $total_karma
  */
 class Post extends Model
 {
@@ -51,6 +52,11 @@ class Post extends Model
     public function karma_items(): MorphMany
     {
         return $this->morphMany(KarmaItem::class, 'karmable');
+    }
+
+    public function getTotalKarmaAttribute(): int
+    {
+        return $this->karma_items()->sum('value');
     }
 
     public function comments(): MorphMany

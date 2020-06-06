@@ -50,7 +50,7 @@ class AuthController extends Controller
 
         Auth::setUser($user);
 
-        $token = $user->createToken('Personal Access Token')->accessToken;
+        $token = $user->createToken('Personal Access Token')->plainTextToken;
 
         $callbackUrl = Session::pull('callback_url', 'https://leadersofdigital-fronted.server.bonch.dev/callback/')[0];
 
