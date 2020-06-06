@@ -24,6 +24,8 @@ class QuestionItemResource extends JsonResource
             'text' => $this->text,
             'votes_count' => $this->votes_count,
             'votes_sum' => $this->votes_sum,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

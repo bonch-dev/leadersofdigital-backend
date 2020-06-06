@@ -47,7 +47,10 @@ class QuestionResource extends JsonResource
             'votes_sum' => $this->votes_sum,
             'voted' => $voted,
             'comments' => CommentResource::collection($this->comments),
-            'question_items' => QuestionItemResource::collection($this->question_items)
+            'question_items' => QuestionItemResource::collection($this->question_items),
+            'end_at' => $this->end_at,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

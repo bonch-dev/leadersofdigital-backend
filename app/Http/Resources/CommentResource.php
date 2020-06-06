@@ -39,6 +39,8 @@ class CommentResource extends JsonResource
             'text' => $this->text,
             'karma' => $this->total_karma,
             'karmed' => $karmed,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

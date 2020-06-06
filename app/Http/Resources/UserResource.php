@@ -72,6 +72,8 @@ class UserResource extends JsonResource
             'rank' => $this->rank,
             'karma' => $this->karma,
             'entities' => $entities,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

@@ -50,7 +50,9 @@ class EventResource extends JsonResource
             'rate' => $this->rate_items()->count(),
             'rated' => $rated,
             'photos' => MediaResource::collection($this->media),
-            'comments' => CommentResource::collection($this->comments)
+            'comments' => CommentResource::collection($this->comments),
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }

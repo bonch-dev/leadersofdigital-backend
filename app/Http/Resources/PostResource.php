@@ -27,6 +27,8 @@ class PostResource extends JsonResource
             'text' => $this->text,
             'photos' => MediaResource::collection($this->media),
             'comments' => CommentResource::collection($this->comments),
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }
