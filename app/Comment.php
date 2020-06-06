@@ -40,8 +40,13 @@ use Illuminate\Support\Carbon;
  */
 class Comment extends Model
 {
+    protected $with = [
+        'user',
+    ];
+
     protected $fillable = [
-        'text'
+        'text',
+        'user_id',
     ];
 
     public function user(): BelongsTo

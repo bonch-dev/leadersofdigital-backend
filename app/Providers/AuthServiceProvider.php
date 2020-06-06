@@ -2,6 +2,16 @@
 
 namespace App\Providers;
 
+use App\Event;
+use App\User;
+use App\Initiative;
+use App\Post;
+use App\Comment;
+use App\Policies\EventPolicy;
+use App\Policies\UserPolicy;
+use App\Policies\PostPolicy;
+use App\Policies\InitiativePolicy;
+use App\Policies\CommentPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 
@@ -13,7 +23,12 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        // 'App\Model' => 'App\Policies\ModelPolicy',
+
+        User::class => UserPolicy::class,
+        Event::class => EventPolicy::class,
+        Initiative::class => InitiativePolicy::class,
+        Post::class => PostPolicy::class,
+        Comment::class => CommentPolicy::class,
     ];
 
     /**

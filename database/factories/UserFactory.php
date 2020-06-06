@@ -22,5 +22,6 @@ $factory->define(User::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
+        'karma' => $faker->randomNumber(3),
     ];
 });

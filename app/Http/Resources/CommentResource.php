@@ -23,22 +23,22 @@ class CommentResource extends JsonResource
     {
         /** @var User $user */
         $user = $request->user('api');
-        $voted = 0;
+        $karmed = 0;
 
         if ($user) {
-            $vote = $this->karma_items()->firstWhere('user_id', $user->id);
+            $karma = $this->karma_items()->firstWhere('user_id', $user->id);
 
-            if ($vote) {
-                $voted = $vote->value;
+            if ($karma) {
+                $karmed = $karma->value;
             }
         }
 
         return [
             'id' => $this->id,
-            'user' => $this->user,
+            'user' => UserResource::make($this->user),
             'text' => $this->text,
             'karma' => $this->total_karma,
-            'voted' => $voted,
+            'karmed' => $karmed,
         ];
     }
 }

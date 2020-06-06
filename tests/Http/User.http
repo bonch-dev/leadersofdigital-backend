@@ -1,8 +1,111 @@
-GET http://localhost:8000/api/users/me
+# curl -X GET
+#    "http://localhost/api/events"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"
+GET http://localhost:8000/api/events
+Accept: application/json
+Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/api/users/1
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer 2|nXnKakAw38G1I4SKR2yS1jwcO8iEF4IjqQbnpgfL4heDvIQVjTiym5XtmimRiup9FtbcqPtiOt9gd3c9
+Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsRKZ3n346omrHg2Q5BmF25JKWs
 
 {}
+
+###
+
+GET http://localhost:8000/api/events
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsRKZ3n346omrHg2Q5BmF25JKWs
+
+{}
+
+###
+# curl -X POST
+#    "http://localhost/api/events"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsRKZ3n346omrHg2Q5BmF25JKWs"
+#    -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City","photos":[11]}'
+POST http://localhost:8000/api/events
+Accept: application/json
+Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsRKZ3n346omrHg2Q5BmF25JKWs
+Content-Type: application/json
+
+{
+    "title": "My cool event",
+    "description": "We will eat bubblegum",
+    "place": "Moscow City",
+    "photos": [
+    ]
+}
+
+###
+
+# curl -X POST
+#    "http://localhost/api/initiatives"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"
+#    -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
+POST http://127.0.0.1:8000/api/initiatives
+Accept: application/json
+Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo
+Content-Type: application/json
+
+{
+    "title": "My cool initiative",
+    "description": "All need to eat bubblegums!",
+    "video_url": "https://www.youtube.com/watch?v=Qzw6A2WC5Qo",
+    "objective": "Bubblegums for everyone",
+    "goals": "Give bubblegum to me, to you and to bonch.dev",
+    "geography": "whole world",
+    "result": "bonch.dev lopnet",
+    "additional": "Why I need to comment it?"
+}
+
+###
+# curl -X POST
+#    "http://localhost/api/comments/1/karmaUp"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"
+POST http://127.0.0.1:8000/api/comments/1/karmaUp
+Accept: application/json
+Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo
+Content-Type: application/json
+
+###
+# curl -X POST
+#    "http://localhost/api/events/1/comment"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"
+#    -d '{"text":"Bla-bla-bla-bla-string"}'
+POST http://localhost:8000/api/events/1/comment
+Accept: application/json
+Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo
+Content-Type: application/json
+
+{
+    "text": "Bla-bla-bla-bla-string"
+}
+
+###
+# curl -X POST
+#    "http://localhost/api/events/1/rate"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"
+POST http://localhost:8000/api/events/1/rate
+Accept: application/json
+Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo
+Content-Type: application/json
 
 ###

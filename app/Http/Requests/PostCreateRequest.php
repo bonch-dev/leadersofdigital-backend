@@ -8,8 +8,8 @@ use Illuminate\Foundation\Http\FormRequest;
  * @bodyParam title string required Title of post. Example: My cool post
  * @bodyParam text string required Text of post. Example: I eating bubblegum
  *
- * @bodyParam photos array Array of used uploaded photos.
- * @bodyParam photos.* int Id of uploaded photo.
+ * @bodyParam photos array Array of used uploaded photos. No-example
+ * @bodyParam photos.* int Id of uploaded photo. No-example
  *
  * Class PostCreateRequest
  * @package App\Http\Requests

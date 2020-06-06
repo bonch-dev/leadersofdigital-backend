@@ -57,6 +57,18 @@ use Laravel\Sanctum\HasApiTokens;
  * @property-read int|null $clients_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Token[] $tokens
  * @property-read int|null $tokens_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Comment[] $comments
+ * @property-read int|null $comments_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
+ * @property-read int|null $events_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Initiative[] $initatives
+ * @property-read int|null $initatives_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\KarmaItem[] $karma_items
+ * @property-read int|null $karma_items_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\RateItem[] $rate_items
+ * @property-read int|null $rate_items_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Post[] $posts
+ * @property-read int|null $posts_count
  */
 class User extends Authenticatable
 {
@@ -118,5 +130,35 @@ class User extends Authenticatable
             'subscriber_id',
             'user_id'
         )->using(Subscriber::class);
+    }
+
+    public function comments(): HasMany
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function posts(): HasMany
+    {
+        return $this->hasMany(Post::class);
+    }
+
+    public function events(): HasMany
+    {
+        return $this->hasMany(Event::class);
+    }
+
+    public function initatives(): HasMany
+    {
+        return $this->hasMany(Initiative::class);
+    }
+
+    public function rate_items(): HasMany
+    {
+        return $this->hasMany(RateItem::class);
+    }
+
+    public function karma_items(): HasMany
+    {
+        return $this->hasMany(KarmaItem::class);
     }
 }

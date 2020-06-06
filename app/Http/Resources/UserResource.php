@@ -4,6 +4,7 @@ namespace App\Http\Resources;
 
 use App\SocialAccount;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
@@ -28,14 +29,48 @@ class UserResource extends JsonResource
             ->where('provider', 'vkontakte')
             ->first();
 
+        $entities = collect([]);
+
+        if ($this->relationLoaded('events')) {
+            $entities = UserEntityResource::collection($this->events)
+                ->additional([
+                    'type' => 'event',
+                ]);
+        }
+
+        if ($this->relationLoaded('posts')) {
+            $entities->merge(
+                UserEntityResource::collection($this->posts)
+                    ->additional([
+                        'type' => 'post',
+                    ])
+            );
+        }
+
+        if ($this->relationLoaded('initatives')) {
+            $entities->merge(
+                UserEntityResource::collection($this->initatives)
+                    ->additional([
+                        'type' => 'initative',
+                    ])
+            );
+        }
+
+        $entities = $entities->sortByDesc(function ($item, $key) {
+            return $item->created_at->unix();
+        })->values();
+
         return [
             'name' => $this->name,
             'birthday_at' => $this->birthday_at,
             'photo' => '',
-            'vk' => 'https://vk.com/id' . $vk->provider_user_id,
-            'influence' => $this->influence,
+            'vk' => $vk ? 'https://vk.com/id' . $vk->provider_user_id : '',
+            $this->mergeWhen($this->relationLoaded('subscribers'), [
+                'influence' => $this->influence,
+            ]),
             'rank' => $this->rank,
             'karma' => $this->karma,
+            'entities' => $entities,
         ];
     }
 }

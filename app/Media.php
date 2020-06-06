@@ -38,10 +38,12 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Media whereSize($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Media whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
+ * @property-read int|null $events_count
  */
 class Media extends BaseMedia
 {
-    public function petitions()
+    public function events()
     {
         return $this->morphedByMany(Event::class, 'mediable');
     }
@@ -54,7 +56,8 @@ class Media extends BaseMedia
     public function scopeNotUsed(Builder $builder)
     {
         return $builder
-            ->whereDoesntHave('petitions')
+            ->whereDoesntHave('events')
+            ->whereDoesntHave('posts')
             ->where('created_at', '<=', \Carbon\Carbon::now()->addHours(-1));
     }
 }

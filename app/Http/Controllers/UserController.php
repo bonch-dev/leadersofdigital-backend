@@ -27,7 +27,12 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return UserResource::make($user);
+        return UserResource::make($user->load([
+            'subscribers',
+            'events',
+            'initatives',
+            'posts'
+        ]));
     }
 
     /**
@@ -39,6 +44,14 @@ class UserController extends Controller
      */
     public function me(Request $request)
     {
-        return UserResource::make($request->user('api'));
+        /** @var User $user */
+        $user = $request->user('api');
+
+        return UserResource::make($user->load([
+            'subscribers',
+            'events',
+            'initatives',
+            'posts'
+        ]));
     }
 }

@@ -48,15 +48,17 @@ class InitiativeController extends Controller
     {
         $user = $request->user('api');
 
-        $event = Initiative::create($request->except(['photos']));
+        $initiative = Initiative::make($request->except(['photos']));
 
-        $event->user()->associate($user);
+        $initiative->status = 'running';
 
-        $event->detachMedia();
+        $initiative->user()->associate($user);
 
-        $event->attachMedia($request->photos);
+        $initiative->detachMedia();
 
-        return InitiativeResource::make($event);
+        $initiative->attachMedia($request->photos);
+
+        return InitiativeResource::make($initiative);
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Optix\Media\HasMedia;
 
@@ -45,10 +46,15 @@ use Optix\Media\HasMedia;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Media[] $media
  * @property-read int|null $media_count
+ * @property-read \App\User|null $user
  */
 class Initiative extends Model
 {
     use HasMedia;
+
+    protected $with = [
+        'user',
+    ];
 
     protected $fillable = [
         'video_url',
@@ -60,6 +66,11 @@ class Initiative extends Model
         'result',
         'additional',
     ];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function rate_items(): MorphMany
     {

@@ -9,8 +9,8 @@ use Illuminate\Foundation\Http\FormRequest;
  * @bodyParam description string required Description of event. Example: We will eat bubblegum
  * @bodyParam place string Place address or name of evenet. Example: Moscow City
  *
- * @bodyParam photos array Array of used uploaded photos.
- * @bodyParam photos.* int Id of uploaded photo.
+ * @bodyParam photos array Array of used uploaded photos. No-example
+ * @bodyParam photos.* int Id of uploaded photo. No-example
  *
  * Class EventCreateRequest
  * @package App\Http\Requests

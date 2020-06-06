@@ -30,7 +30,10 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  */
 class RateItem extends Model
 {
-    //
+    protected $fillable = [
+        'user_id',
+    ];
+
     public function rateable(): MorphTo
     {
         return $this->morphTo();

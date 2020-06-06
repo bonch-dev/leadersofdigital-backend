@@ -56,16 +56,16 @@
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/provider/vkontakte?callback_url=sint" \
+    -G "http://localhost/provider/vkontakte?callback_url=quibusdam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/provider/vkontakte"
 );
 
 let params = {
-    "callback_url": "sint",
+    "callback_url": "quibusdam",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -73,7 +73,7 @@ Object.keys(params)
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -132,7 +132,7 @@ fetch(url, {
     -G "http://localhost/provider/1/callback" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/provider/1/callback"
 );
@@ -140,7 +140,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -158,6 +158,76 @@ fetch(url, {
 <h3>HTTP Request</h3>
 <p><code>GET provider/{provider}/callback</code></p>
 <!-- END_d13b0a9474a479be736af884e72a9773 -->
+<h1>Comment</h1>
+<p>Class CommentController</p>
+<!-- START_fe1751e75f4a4aa096e4355447bc5e8c -->
+<h2>Down karma to comment</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/comments/1/karmaUp" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/comments/1/karmaUp"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">1</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/comments/{comment}/karmaUp</code></p>
+<!-- END_fe1751e75f4a4aa096e4355447bc5e8c -->
+<!-- START_04d72c1cf5f64ed8b5903288b9d0031a -->
+<h2>Up karma to comment</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/comments/1/karmaDown" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/comments/1/karmaDown"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">1</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/comments/{comment}/karmaDown</code></p>
+<!-- END_04d72c1cf5f64ed8b5903288b9d0031a -->
 <h1>Event</h1>
 <p>Class EventController</p>
 <!-- START_e59bc0d6c63548c8e901a7058dc2d963 -->
@@ -170,7 +240,7 @@ fetch(url, {
     "http://localhost/api/events/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -180,7 +250,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
@@ -195,10 +265,25 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "data": {
+        "id": null,
+        "user": {
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": []
+        },
+        "text": "Bla-bla-bla-bla-string",
+        "karma": 0,
+        "karmed": 0
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/comment</code></p>
@@ -232,7 +317,7 @@ fetch(url, {
     "http://localhost/api/events/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/karmaUp"
 );
@@ -240,7 +325,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -250,11 +335,9 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
-}</code></pre>
+<pre><code class="language-json">1</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/karmaUp</code></p>
 <!-- END_4b2f9b1c7c2e39989b6f10e228397c2d -->
@@ -268,7 +351,7 @@ fetch(url, {
     "http://localhost/api/events/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/karmaDown"
 );
@@ -276,7 +359,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -286,11 +369,9 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
-}</code></pre>
+<pre><code class="language-json">1</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/karmaDown</code></p>
 <!-- END_7b475ebb9bcd98371752157178aabdb1 -->
@@ -304,7 +385,7 @@ fetch(url, {
     "http://localhost/api/events/1/rate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/rate"
 );
@@ -312,7 +393,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -322,11 +403,9 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
-}</code></pre>
+<pre><code class="language-json">1</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/rate</code></p>
 <!-- END_355d5dac7d3e804f83d5690f40b6f874 -->
@@ -340,7 +419,7 @@ fetch(url, {
     "http://localhost/api/events/1/unrate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/unrate"
 );
@@ -348,7 +427,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -358,11 +437,9 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
-}</code></pre>
+<pre><code class="language-json">1</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/unrate</code></p>
 <!-- END_02e29414b7211eeccb73592e76801925 -->
@@ -375,7 +452,7 @@ fetch(url, {
     -G "http://localhost/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events"
 );
@@ -383,7 +460,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -396,7 +473,198 @@ fetch(url, {
 <p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": [],
+    "data": [
+        {
+            "id": 1,
+            "title": "Gryphon. 'Then, you know,' said Alice, who felt very lonely and low-spirited. In a minute or two, and the arm that was linked into hers began to cry again. 'You ought to eat the comfits: this caused.",
+            "description": "We must have imitated somebody else's hand,' said the cook. The King looked anxiously at the March Hare. Visit either you like: they're both mad.' 'But I don't know,' he went on, 'and most things.",
+            "phone": "923.725.6324 x80448",
+            "place": "2019 Abbott Glens\nLornastad, AL 75965",
+            "user": {
+                "name": "Mr. Lester Maggio",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 806,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": true,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 1,
+                    "user": {
+                        "name": "Mr. Lester Maggio",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 806,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 1,
+                    "karmed": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "I!' he replied. 'We quarrelled last March--just before HE went mad, you know--' (pointing with his tea spoon at the righthand bit again, and the pair of the ground, Alice soon began talking to him,'.",
+            "description": "Cheshire Cat: now I shall have somebody to talk about her repeating 'YOU ARE OLD, FATHER WILLIAM,' to the porpoise, \"Keep back, please: we don't want to be?' it asked. 'Oh, I'm not looking for eggs.",
+            "phone": "+1.763.337.6641",
+            "place": "3025 Domenico Green\nDickiburgh, WA 11466-9400",
+            "user": {
+                "name": "Prof. Kelly Hagenes",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 519,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 2,
+                    "user": {
+                        "name": "Prof. Kelly Hagenes",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 519,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "The Mouse looked at Alice. 'It must have a prize herself, you know,' the Hatter with a sudden leap out of a feather flock together.\"' 'Only mustard isn't a letter, after all: it's a French mouse.",
+            "description": "Dinah my dear! Let this be a very long silence, broken only by an occasional exclamation of 'Hjckrrh!' from the Queen said to herself, and shouted out, 'You'd better not do that again!' which.",
+            "phone": "986.884.1906 x79494",
+            "place": "263 Fletcher Field Suite 566\nSawaynport, FL 34914-6718",
+            "user": {
+                "name": "Elmer Leannon",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 604,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 3,
+                    "user": {
+                        "name": "Elmer Leannon",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 604,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Lizard, who seemed to be a letter, written by the Hatter, and, just as I do,' said the Mock Turtle. 'No, no! The adventures first,' said the Duchess, 'as pigs have to fly; and the baby violently up.",
+            "description": "So you see, as she swam about, trying to put his shoes off. 'Give your evidence,' said the March Hare. 'Sixteenth,' added the Hatter, with an M--' 'Why with an M--' 'Why with an M, such as.",
+            "phone": "560-379-4161",
+            "place": "99349 Moshe Corners Suite 913\nPort Avisborough, NM 54312",
+            "user": {
+                "name": "Peyton Roberts DDS",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 582,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 4,
+                    "user": {
+                        "name": "Peyton Roberts DDS",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 582,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "But her sister was reading, but it is.' 'Then you should say \"With what porpoise?\"' 'Don't you mean that you never to lose YOUR temper!' 'Hold your tongue!' said the Hatter. He came in sight of the.",
+            "description": "As for pulling me out of sight; and an Eaglet, and several other curious creatures. Alice led the way, and nothing seems to grin, How neatly spread his claws, And welcome little fishes in With.",
+            "phone": "1-249-246-8079 x75483",
+            "place": "590 Rolfson Spurs Suite 832\nOkunevamouth, UT 25244-8010",
+            "user": {
+                "name": "Mr. Sigmund Schumm II",
+                "birthday_at": null,
+                "photo": "",
+                "vk": "",
+                "rank": 1,
+                "karma": 336,
+                "entities": []
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": null,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 5,
+                    "user": {
+                        "name": "Mr. Sigmund Schumm II",
+                        "birthday_at": null,
+                        "photo": "",
+                        "vk": "",
+                        "rank": 1,
+                        "karma": 336,
+                        "entities": []
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0
+                }
+            ]
+        }
+    ],
     "links": {
         "first": "http:\/\/localhost\/api\/events?page=1",
         "last": "http:\/\/localhost\/api\/events?page=1",
@@ -405,12 +673,12 @@ fetch(url, {
     },
     "meta": {
         "current_page": 1,
-        "from": null,
+        "from": 1,
         "last_page": 1,
         "path": "http:\/\/localhost\/api\/events",
         "per_page": 15,
-        "to": null,
-        "total": 0
+        "to": 5,
+        "total": 5
     }
 }</code></pre>
 <h3>HTTP Request</h3>
@@ -426,8 +694,8 @@ fetch(url, {
     "http://localhost/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
-    -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City","photos":[20]}'
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events"
@@ -436,16 +704,13 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
     "title": "My cool event",
     "description": "We will eat bubblegum",
-    "place": "Moscow City",
-    "photos": [
-        20
-    ]
+    "place": "Moscow City"
 }
 
 fetch(url, {
@@ -456,10 +721,18 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (422):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "message": "The given data was invalid.",
+    "errors": {
+        "name": [
+            "The name field is required."
+        ],
+        "phone": [
+            "The phone field is required."
+        ]
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events</code></p>
@@ -516,7 +789,7 @@ fetch(url, {
     -G "http://localhost/api/events/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1"
 );
@@ -524,7 +797,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -534,10 +807,47 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "data": {
+        "id": 1,
+        "title": "Gryphon. 'Then, you know,' said Alice, who felt very lonely and low-spirited. In a minute or two, and the arm that was linked into hers began to cry again. 'You ought to eat the comfits: this caused.",
+        "description": "We must have imitated somebody else's hand,' said the cook. The King looked anxiously at the March Hare. Visit either you like: they're both mad.' 'But I don't know,' he went on, 'and most things.",
+        "phone": "923.725.6324 x80448",
+        "place": "2019 Abbott Glens\nLornastad, AL 75965",
+        "user": {
+            "name": "Mr. Lester Maggio",
+            "birthday_at": null,
+            "photo": "",
+            "vk": "",
+            "rank": 1,
+            "karma": 806,
+            "entities": []
+        },
+        "karma": 0,
+        "karmed": 0,
+        "rate": null,
+        "rated": true,
+        "photos": [],
+        "comments": [
+            {
+                "id": 1,
+                "user": {
+                    "name": "Mr. Lester Maggio",
+                    "birthday_at": null,
+                    "photo": "",
+                    "vk": "",
+                    "rank": 1,
+                    "karma": 806,
+                    "entities": []
+                },
+                "text": "random_text",
+                "karma": 1,
+                "karmed": 1
+            }
+        ]
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/events/{event}</code></p>
@@ -552,8 +862,8 @@ fetch(url, {
     "http://localhost/api/events/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
-    -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City","photos":[18]}'
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1"
@@ -562,16 +872,13 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
     "title": "My cool event",
     "description": "We will eat bubblegum",
-    "place": "Moscow City",
-    "photos": [
-        18
-    ]
+    "place": "Moscow City"
 }
 
 fetch(url, {
@@ -582,10 +889,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "message": "This action is unauthorized."
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/events/{event}</code></p>
@@ -646,7 +953,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1/rate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1/rate"
 );
@@ -654,7 +961,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -682,7 +989,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1/unrate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1/unrate"
 );
@@ -690,7 +997,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -717,7 +1024,7 @@ fetch(url, {
     -G "http://localhost/api/initiatives" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives"
 );
@@ -725,7 +1032,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -768,8 +1075,8 @@ fetch(url, {
     "http://localhost/api/initiatives" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
-    -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?","photos":[15]}'
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives"
@@ -778,7 +1085,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
@@ -789,10 +1096,7 @@ let body = {
     "goals": "Give bubblegum to me, to you and to bonch.dev",
     "geography": "whole world",
     "result": "bonch.dev lopnet",
-    "additional": "Why I need to comment it?",
-    "photos": [
-        15
-    ]
+    "additional": "Why I need to comment it?"
 }
 
 fetch(url, {
@@ -803,10 +1107,33 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "data": {
+        "id": null,
+        "user": {
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": []
+        },
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo",
+        "title": "My cool initiative",
+        "description": "All need to eat bubblegums!",
+        "objective": "Bubblegums for everyone",
+        "goals": "Give bubblegum to me, to you and to bonch.dev",
+        "geography": "whole world",
+        "result": "bonch.dev lopnet",
+        "additional": "Why I need to comment it?",
+        "rate": null,
+        "rated": false,
+        "status": "running"
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/initiatives</code></p>
@@ -893,7 +1220,7 @@ fetch(url, {
     -G "http://localhost/api/initiatives/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1"
 );
@@ -901,7 +1228,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -929,8 +1256,8 @@ fetch(url, {
     "http://localhost/api/initiatives/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
-    -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?","photos":[9]}'
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1"
@@ -939,7 +1266,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
@@ -950,10 +1277,7 @@ let body = {
     "goals": "Give bubblegum to me, to you and to bonch.dev",
     "geography": "whole world",
     "result": "bonch.dev lopnet",
-    "additional": "Why I need to comment it?",
-    "photos": [
-        9
-    ]
+    "additional": "Why I need to comment it?"
 }
 
 fetch(url, {
@@ -1058,7 +1382,7 @@ fetch(url, {
     "http://localhost/api/media" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/media"
@@ -1067,7 +1391,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1119,7 +1443,7 @@ fetch(url, {
     "http://localhost/api/media" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/media"
@@ -1128,7 +1452,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1177,6 +1501,36 @@ fetch(url, {
 </tbody>
 </table>
 <!-- END_bb5530c02c7579ae6874d5b27b986ee3 -->
+<h1>Other</h1>
+<!-- START_4dfafe7f87ec132be3c8990dd1fa9078 -->
+<h2>Return an empty response simply to trigger the storage of the CSRF cookie in the browser.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/sanctum/csrf-cookie" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/sanctum/csrf-cookie"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET sanctum/csrf-cookie</code></p>
+<!-- END_4dfafe7f87ec132be3c8990dd1fa9078 -->
 <h1>Post</h1>
 <p>Class PostController</p>
 <!-- START_2e801dd71d2d900d8da8bd55f490d9a8 -->
@@ -1189,7 +1543,7 @@ fetch(url, {
     "http://localhost/api/posts/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1199,7 +1553,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
@@ -1251,7 +1605,7 @@ fetch(url, {
     "http://localhost/api/posts/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1/karmaUp"
 );
@@ -1259,7 +1613,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1287,7 +1641,7 @@ fetch(url, {
     "http://localhost/api/posts/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1/karmaDown"
 );
@@ -1295,7 +1649,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1322,7 +1676,7 @@ fetch(url, {
     -G "http://localhost/api/posts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts"
 );
@@ -1330,7 +1684,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1373,8 +1727,8 @@ fetch(url, {
     "http://localhost/api/posts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
-    -d '{"title":"My cool post","text":"I eating bubblegum","photos":[1]}'
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -d '{"title":"My cool post","text":"I eating bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts"
@@ -1383,15 +1737,12 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
     "title": "My cool post",
-    "text": "I eating bubblegum",
-    "photos": [
-        1
-    ]
+    "text": "I eating bubblegum"
 }
 
 fetch(url, {
@@ -1402,10 +1753,26 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (201):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "data": {
+        "id": 5,
+        "user": {
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": []
+        },
+        "title": "My cool post",
+        "text": "I eating bubblegum",
+        "photos": [],
+        "comments": []
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/posts</code></p>
@@ -1456,7 +1823,7 @@ fetch(url, {
     -G "http://localhost/api/posts/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1"
 );
@@ -1464,7 +1831,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1492,8 +1859,8 @@ fetch(url, {
     "http://localhost/api/posts/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY" \
-    -d '{"title":"My cool post","text":"I eating bubblegum","photos":[12]}'
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo" \
+    -d '{"title":"My cool post","text":"I eating bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1"
@@ -1502,15 +1869,12 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 let body = {
     "title": "My cool post",
-    "text": "I eating bubblegum",
-    "photos": [
-        12
-    ]
+    "text": "I eating bubblegum"
 }
 
 fetch(url, {
@@ -1569,41 +1933,6 @@ fetch(url, {
 <!-- END_6d1dfaf5fa710725519375063e4e9db0 -->
 <h1>User</h1>
 <p>Class UserController</p>
-<!-- START_8653614346cb0e3d444d164579a0a0a2 -->
-<h2>Display the specified user.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/users/1" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/users/1"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
-};
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (404):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\User] 1"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/users/{user}</code></p>
-<!-- END_8653614346cb0e3d444d164579a0a0a2 -->
 <!-- START_8d1e53fcf4d2d02a6144ed392de856bf -->
 <h2>Display info about me</h2>
 <p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
@@ -1614,7 +1943,7 @@ fetch(url, {
     -G "http://localhost/api/users/me" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY"</code></pre>
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/users/me"
 );
@@ -1622,7 +1951,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTQxMjVlMGZkZGVlY2U4ZjI0YWRjYzQxYWFkYWQ3YTA2MWM5NGYyZTMxOTE1ZGMxNjNmNzViZWVlM2QxZWFkZDY4OTA4NmEyNWEwZmQzMDciLCJpYXQiOjE1OTAwNzE0MTksIm5iZiI6MTU5MDA3MTQxOSwiZXhwIjoxNjIxNjA3NDE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gSjvlXnc__vIdKLDgQPx5pXZxKJ_-31UA1EOARpIW0AWbMlQISCQIMAd8FttYZrylj-VUuJCzABpd9iYOiPOZzTtixLjnQhNO88NppyGm2zrAvonpGPR1HK2E1utKiG6eH1EIT5Ynt83FrBrPEx9qc8frMXsqKCdCOxYVpmS_YuwPG4mj1IkmEbRocBPO074hgvsasuH3RTNUkF-a_Cuo2Or7p1DltlZI_1G_mQ0kOnxK-oovQ3SndZczJmXc26KO6tJzOoJFp3oyAgepGvkQrtajPw8f-ZMlTzAmMKSTQhxL17llYKuqzpClNZJRyfziMJjDChJuRDG88e2cA8lUzIESIOdqTimYjP53hGdXXjaUGlt5COtS8maR3yBYTtv_6N_WqGmq59KKfgl2W2dHyCNefRB5dVKeX8WRv2KNG1kEmGHkmpIEVy_VElNnVcKRHiWyWkUFfcA9NsOe46UDnvHrMbo08ac9nEnYkXTJxdRXuZetjmQRkoWODSRfuCnk6a03l9Jo3DxaTosV6-m905XflcFn5y9iHjd6qAU_TvXXnYzu-Em4ee6L9Iw0D2m_AWlw5sb1yXqEBaffXjGhZv121h5j25e77ftub_Yi1bo2M1Go7-9Y0JoSYrR7pOdzhhyo2t_Z40IjbnqfD0tq-cKtUB_gVtcfwbuMm1jQPY",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
 };
 
 fetch(url, {
@@ -1632,14 +1961,78 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (500):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Server Error"
+    "data": {
+        "name": "Gosha Kargin",
+        "birthday_at": null,
+        "photo": "",
+        "vk": "https:\/\/vk.com\/id49879593",
+        "influence": 0,
+        "rank": 1,
+        "karma": 0,
+        "entities": []
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/users/me</code></p>
 <!-- END_8d1e53fcf4d2d02a6144ed392de856bf -->
+<!-- START_8653614346cb0e3d444d164579a0a0a2 -->
+<h2>Display the specified user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/users/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/users/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|nsW8cNWdGCqE1YFxTbWlhwlfjur5s3pE1rA5bHQOx7VwKyQKBFL5D9l4ybuthp9ff00GHa1umGNnvjvo",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": {
+        "name": "Mr. Sigmund Schumm II",
+        "birthday_at": null,
+        "photo": "",
+        "vk": "",
+        "influence": 3,
+        "rank": 1,
+        "karma": 336,
+        "entities": [
+            {
+                "id": 5,
+                "type": "event",
+                "user_id": 1,
+                "title": "But her sister was reading, but it is.' 'Then you should say \"With what porpoise?\"' 'Don't you mean that you never to lose YOUR temper!' 'Hold your tongue!' said the Hatter. He came in sight of the.",
+                "description": "As for pulling me out of sight; and an Eaglet, and several other curious creatures. Alice led the way, and nothing seems to grin, How neatly spread his claws, And welcome little fishes in With.",
+                "karma": 0,
+                "rate": 0,
+                "created_at": "2020-06-06T15:53:50.000000Z"
+            }
+        ]
+    }
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/users/{user}</code></p>
+<!-- END_8653614346cb0e3d444d164579a0a0a2 -->
       </div>
       <div class="dark-box">
                         <div class="lang-selector">

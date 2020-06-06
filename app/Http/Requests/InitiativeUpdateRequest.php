@@ -14,8 +14,8 @@ use Illuminate\Foundation\Http\FormRequest;
  * @bodyParam result string Result when initiative end's. Example: bonch.dev lopnet
  * @bodyParam additional string Some comments of initiative. Example: Why I need to comment it?
  *
- * @bodyParam photos array Array of used uploaded photos.
- * @bodyParam photos.* int Id of uploaded photo.
+ * @bodyParam photos array Array of used uploaded photos. No-example
+ * @bodyParam photos.* int Id of uploaded photo. No-example
  *
  * Class InitiativeUpdateRequest
  * @package App\Http\Requests

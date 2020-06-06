@@ -34,10 +34,15 @@ use Optix\Media\HasMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereUserId($value)
  * @mixin \Eloquent
  * @property-read int $total_karma
+ * @property-read string $description
  */
 class Post extends Model
 {
     use HasMedia;
+
+    protected $with = [
+        'user',
+    ];
 
     protected $fillable = [
         'title',
@@ -62,5 +67,10 @@ class Post extends Model
     public function comments(): MorphMany
     {
         return $this->morphMany(Comment::class, 'commentable');
+    }
+
+    public function getDescriptionAttribute(): string
+    {
+        return $this->text;
     }
 }

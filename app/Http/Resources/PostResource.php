@@ -2,8 +2,14 @@
 
 namespace App\Http\Resources;
 
+use App\Post;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * Class PostResource
+ * @package App\Http\Resources
+ * @mixin Post
+ */
 class PostResource extends JsonResource
 {
     /**
@@ -14,6 +20,13 @@ class PostResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'user' => UserResource::make($this->user),
+            'title' => $this->title,
+            'text' => $this->text,
+            'photos' => MediaResource::collection($this->media),
+            'comments' => CommentResource::collection($this->comments),
+        ];
     }
 }

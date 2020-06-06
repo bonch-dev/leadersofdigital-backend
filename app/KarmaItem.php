@@ -37,7 +37,8 @@ use Log;
 class KarmaItem extends Model
 {
     protected $fillable = [
-        'value'
+        'value',
+        'user_id',
     ];
 
     public function karmable(): MorphTo
@@ -52,7 +53,7 @@ class KarmaItem extends Model
 
     protected static function booted()
     {
-        static::saving(function (KarmaItem $karma) {
+        static::updating(function (KarmaItem $karma) {
             $lastValue = $karma->getOriginal('value');
 
             if ($lastValue == $karma->value) {

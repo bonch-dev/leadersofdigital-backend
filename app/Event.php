@@ -54,6 +54,10 @@ class Event extends Model
 {
     use HasMedia;
 
+    protected $with = [
+        'user',
+    ];
+
     protected $fillable = [
         'title',
         'description',
