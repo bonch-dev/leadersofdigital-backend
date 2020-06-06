@@ -56,6 +56,8 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
+    'is_secure' => env('APP_SECURE', false),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
