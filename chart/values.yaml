@@ -20,6 +20,12 @@ application:
   environments:
     - name: APP_NAME
       value: "Единство"
+    - name: VKONTAKTE_KEY
+      value: "kUdEtA1qyBB1wrBz24uO"
+    - name: VKONTAKTE_SECRET
+      value: "8a32b4ee8a32b4ee8a32b4ee268a40c69888a328a32b4eed4e8233718fd5ec9d2ad06ed"
+    - name: VKONTAKTE_REDIRECT_URI
+      value: "https://leadersofdigital-backend.server.bonch.dev/api/provider/vkontakte/redirect"
 hpa:
   enabled: false
   minReplicas: 1
@@ -47,7 +53,6 @@ ingress:
   annotations:
     kubernetes.io/tls-acme: "true"
     kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
   modSecurity:
     enabled: false

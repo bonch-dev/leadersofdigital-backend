@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Social login providers...
+Route::get('/provider/{provider}', 'AuthController@redirectToProvider')->name('redirectToProvider');
+Route::get('/provider/{provider}/callback', 'AuthController@handleProviderCallback');
+
+Route::get('/home', function() {
+    return dd(Auth::user());
+});
