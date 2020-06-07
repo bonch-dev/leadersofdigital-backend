@@ -61,7 +61,7 @@ class Question extends Model
     use HasMedia;
     //
     protected $fillable = [
-        'text',
+        'title',
         'description',
         'end_at'
     ];
