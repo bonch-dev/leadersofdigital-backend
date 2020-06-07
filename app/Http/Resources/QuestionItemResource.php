@@ -21,6 +21,7 @@ class QuestionItemResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'text' => $this->text,
             'votes_count' => $this->votes_count,
             'votes_sum' => $this->votes_sum,

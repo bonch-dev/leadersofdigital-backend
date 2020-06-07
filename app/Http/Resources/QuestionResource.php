@@ -39,6 +39,7 @@ class QuestionResource extends JsonResource
         }
 
         return [
+            'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
             'karma' => $this->total_karma,
