@@ -49,6 +49,7 @@ class QuestionResource extends JsonResource
             'comments' => CommentResource::collection($this->comments),
             'question_items' => QuestionItemResource::collection($this->question_items),
             'end_at' => $this->end_at,
+            'photos' => MediaResource::collection($this->media),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

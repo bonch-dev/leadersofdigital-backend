@@ -45,6 +45,7 @@ class InitiativeResource extends JsonResource
             'rate' => $this->rate_items()->count(),
             'rated' => $rated,
             'status' => $this->status,
+            'photos' => MediaResource::collection($this->media),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
