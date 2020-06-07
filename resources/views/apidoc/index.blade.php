@@ -56,16 +56,16 @@
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/provider/vkontakte?callback_url=consectetur" \
+    -G "http://localhost/provider/vkontakte?callback_url=odio" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/provider/vkontakte"
 );
 
 let params = {
-    "callback_url": "consectetur",
+    "callback_url": "odio",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -73,7 +73,7 @@ Object.keys(params)
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -132,7 +132,7 @@ fetch(url, {
     -G "http://localhost/provider/1/callback" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/provider/1/callback"
 );
@@ -140,7 +140,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -170,7 +170,7 @@ fetch(url, {
     "http://localhost/api/comments/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/comments/1/karmaUp"
 );
@@ -178,7 +178,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -188,10 +188,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Comment] 1"
+    "message": "Вы не можете голосовать за свои комментарии"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/comments/{comment}/karmaUp</code></p>
@@ -206,7 +206,7 @@ fetch(url, {
     "http://localhost/api/comments/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/comments/1/karmaDown"
 );
@@ -214,7 +214,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -224,10 +224,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Comment] 1"
+    "message": "Вы не можете голосовать за свои комментарии"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/comments/{comment}/karmaDown</code></p>
@@ -244,7 +244,7 @@ fetch(url, {
     "http://localhost/api/events/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -254,7 +254,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -269,10 +269,96 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "data": {
+        "id": null,
+        "user": {
+            "id": 1,
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": [
+                {
+                    "id": 1,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+                    "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 2,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+                    "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 3,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+                    "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 4,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+                    "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 5,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+                    "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-06T19:20:17.000000Z",
+            "updated_at": "2020-06-06T19:20:17.000000Z"
+        },
+        "text": "Bla-bla-bla-bla-string",
+        "karma": 0,
+        "karmed": 0,
+        "created_at": null,
+        "updated_at": null
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/comment</code></p>
@@ -306,7 +392,7 @@ fetch(url, {
     "http://localhost/api/events/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/karmaUp"
 );
@@ -314,7 +400,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -324,10 +410,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "message": "Вы не можете голосовать за свои инициативы или обращения"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/karmaUp</code></p>
@@ -342,7 +428,7 @@ fetch(url, {
     "http://localhost/api/events/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/karmaDown"
 );
@@ -350,7 +436,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -360,10 +446,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "message": "Вы не можете голосовать за свои инициативы или обращения"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/karmaDown</code></p>
@@ -378,7 +464,7 @@ fetch(url, {
     "http://localhost/api/events/1/rate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/rate"
 );
@@ -386,7 +472,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -396,10 +482,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "message": "Вы не можете голосовать за свои инициативы или обращения"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/rate</code></p>
@@ -414,7 +500,7 @@ fetch(url, {
     "http://localhost/api/events/1/unrate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1/unrate"
 );
@@ -422,7 +508,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -432,10 +518,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "message": "Вы не можете голосовать за свои инициативы или обращения"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/unrate</code></p>
@@ -449,7 +535,7 @@ fetch(url, {
     -G "http://localhost/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events"
 );
@@ -457,7 +543,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -470,7 +556,248 @@ fetch(url, {
 <p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": [],
+    "data": [
+        {
+            "id": 1,
+            "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+            "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+            "phone": "+1 (201) 781-1530",
+            "place": "9218 Zulauf Haven\nRebekaton, DE 31366",
+            "user": {
+                "id": 1,
+                "name": "Gosha Kargin",
+                "birthday_at": null,
+                "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                "vk": "https:\/\/vk.com\/id49879593",
+                "rank": 1,
+                "karma": 0,
+                "entities": [],
+                "created_at": "2020-06-06T19:20:17.000000Z",
+                "updated_at": "2020-06-06T19:20:17.000000Z"
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": 0,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 1,
+                    "user": {
+                        "id": 1,
+                        "name": "Gosha Kargin",
+                        "birthday_at": null,
+                        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                        "vk": "https:\/\/vk.com\/id49879593",
+                        "rank": 1,
+                        "karma": 0,
+                        "entities": [],
+                        "created_at": "2020-06-06T19:20:17.000000Z",
+                        "updated_at": "2020-06-06T19:20:17.000000Z"
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-07T00:14:40.000000Z",
+            "updated_at": "2020-06-07T00:14:40.000000Z"
+        },
+        {
+            "id": 2,
+            "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+            "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+            "phone": "579-922-9226 x3604",
+            "place": "61649 Windler Greens Apt. 937\nMartinburgh, TN 95921",
+            "user": {
+                "id": 1,
+                "name": "Gosha Kargin",
+                "birthday_at": null,
+                "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                "vk": "https:\/\/vk.com\/id49879593",
+                "rank": 1,
+                "karma": 0,
+                "entities": [],
+                "created_at": "2020-06-06T19:20:17.000000Z",
+                "updated_at": "2020-06-06T19:20:17.000000Z"
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": 0,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 2,
+                    "user": {
+                        "id": 1,
+                        "name": "Gosha Kargin",
+                        "birthday_at": null,
+                        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                        "vk": "https:\/\/vk.com\/id49879593",
+                        "rank": 1,
+                        "karma": 0,
+                        "entities": [],
+                        "created_at": "2020-06-06T19:20:17.000000Z",
+                        "updated_at": "2020-06-06T19:20:17.000000Z"
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-07T00:14:40.000000Z",
+            "updated_at": "2020-06-07T00:14:40.000000Z"
+        },
+        {
+            "id": 3,
+            "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+            "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+            "phone": "(929) 305-5419 x7516",
+            "place": "525 Wisozk Brook Suite 380\nMcKenzietown, AL 43878-4872",
+            "user": {
+                "id": 1,
+                "name": "Gosha Kargin",
+                "birthday_at": null,
+                "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                "vk": "https:\/\/vk.com\/id49879593",
+                "rank": 1,
+                "karma": 0,
+                "entities": [],
+                "created_at": "2020-06-06T19:20:17.000000Z",
+                "updated_at": "2020-06-06T19:20:17.000000Z"
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": 0,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 3,
+                    "user": {
+                        "id": 1,
+                        "name": "Gosha Kargin",
+                        "birthday_at": null,
+                        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                        "vk": "https:\/\/vk.com\/id49879593",
+                        "rank": 1,
+                        "karma": 0,
+                        "entities": [],
+                        "created_at": "2020-06-06T19:20:17.000000Z",
+                        "updated_at": "2020-06-06T19:20:17.000000Z"
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-07T00:14:40.000000Z",
+            "updated_at": "2020-06-07T00:14:40.000000Z"
+        },
+        {
+            "id": 4,
+            "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+            "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+            "phone": "745.557.9724",
+            "place": "20331 Nienow Ranch Apt. 144\nNorth Henderson, CO 02878-5634",
+            "user": {
+                "id": 1,
+                "name": "Gosha Kargin",
+                "birthday_at": null,
+                "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                "vk": "https:\/\/vk.com\/id49879593",
+                "rank": 1,
+                "karma": 0,
+                "entities": [],
+                "created_at": "2020-06-06T19:20:17.000000Z",
+                "updated_at": "2020-06-06T19:20:17.000000Z"
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": 0,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 4,
+                    "user": {
+                        "id": 1,
+                        "name": "Gosha Kargin",
+                        "birthday_at": null,
+                        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                        "vk": "https:\/\/vk.com\/id49879593",
+                        "rank": 1,
+                        "karma": 0,
+                        "entities": [],
+                        "created_at": "2020-06-06T19:20:17.000000Z",
+                        "updated_at": "2020-06-06T19:20:17.000000Z"
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-07T00:14:40.000000Z",
+            "updated_at": "2020-06-07T00:14:40.000000Z"
+        },
+        {
+            "id": 5,
+            "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+            "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+            "phone": "301-348-6653 x63898",
+            "place": "86314 Mina Plain Apt. 518\nNicklausburgh, NM 10505",
+            "user": {
+                "id": 1,
+                "name": "Gosha Kargin",
+                "birthday_at": null,
+                "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                "vk": "https:\/\/vk.com\/id49879593",
+                "rank": 1,
+                "karma": 0,
+                "entities": [],
+                "created_at": "2020-06-06T19:20:17.000000Z",
+                "updated_at": "2020-06-06T19:20:17.000000Z"
+            },
+            "karma": 0,
+            "karmed": 0,
+            "rate": 0,
+            "rated": false,
+            "photos": [],
+            "comments": [
+                {
+                    "id": 5,
+                    "user": {
+                        "id": 1,
+                        "name": "Gosha Kargin",
+                        "birthday_at": null,
+                        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                        "vk": "https:\/\/vk.com\/id49879593",
+                        "rank": 1,
+                        "karma": 0,
+                        "entities": [],
+                        "created_at": "2020-06-06T19:20:17.000000Z",
+                        "updated_at": "2020-06-06T19:20:17.000000Z"
+                    },
+                    "text": "random_text",
+                    "karma": 0,
+                    "karmed": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-07T00:14:40.000000Z",
+            "updated_at": "2020-06-07T00:14:40.000000Z"
+        }
+    ],
     "links": {
         "first": "http:\/\/localhost\/api\/events?page=1",
         "last": "http:\/\/localhost\/api\/events?page=1",
@@ -479,12 +806,12 @@ fetch(url, {
     },
     "meta": {
         "current_page": 1,
-        "from": null,
+        "from": 1,
         "last_page": 1,
         "path": "http:\/\/localhost\/api\/events",
         "per_page": 15,
-        "to": null,
-        "total": 0
+        "to": 5,
+        "total": 5
     }
 }</code></pre>
 <h3>HTTP Request</h3>
@@ -500,7 +827,7 @@ fetch(url, {
     "http://localhost/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -510,7 +837,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -527,10 +854,15 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (422):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "message": "The given data was invalid.",
+    "errors": {
+        "phone": [
+            "The phone field is required."
+        ]
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events</code></p>
@@ -587,7 +919,7 @@ fetch(url, {
     -G "http://localhost/api/events/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/events/1"
 );
@@ -595,7 +927,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -605,10 +937,57 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "data": {
+        "id": 1,
+        "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+        "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+        "phone": "+1 (201) 781-1530",
+        "place": "9218 Zulauf Haven\nRebekaton, DE 31366",
+        "user": {
+            "id": 1,
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "rank": 1,
+            "karma": 0,
+            "entities": [],
+            "created_at": "2020-06-06T19:20:17.000000Z",
+            "updated_at": "2020-06-06T19:20:17.000000Z"
+        },
+        "karma": 0,
+        "karmed": 0,
+        "rate": 0,
+        "rated": false,
+        "photos": [],
+        "comments": [
+            {
+                "id": 1,
+                "user": {
+                    "id": 1,
+                    "name": "Gosha Kargin",
+                    "birthday_at": null,
+                    "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                    "vk": "https:\/\/vk.com\/id49879593",
+                    "rank": 1,
+                    "karma": 0,
+                    "entities": [],
+                    "created_at": "2020-06-06T19:20:17.000000Z",
+                    "updated_at": "2020-06-06T19:20:17.000000Z"
+                },
+                "text": "random_text",
+                "karma": 0,
+                "karmed": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            }
+        ],
+        "created_at": "2020-06-07T00:14:40.000000Z",
+        "updated_at": "2020-06-07T00:14:40.000000Z"
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/events/{event}</code></p>
@@ -623,7 +1002,7 @@ fetch(url, {
     "http://localhost/api/events/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -633,7 +1012,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -650,10 +1029,57 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Event] 1"
+    "data": {
+        "id": 1,
+        "title": "My cool event",
+        "description": "We will eat bubblegum",
+        "phone": "+1 (201) 781-1530",
+        "place": "Moscow City",
+        "user": {
+            "id": 1,
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "rank": 1,
+            "karma": 0,
+            "entities": [],
+            "created_at": "2020-06-06T19:20:17.000000Z",
+            "updated_at": "2020-06-06T19:20:17.000000Z"
+        },
+        "karma": 0,
+        "karmed": 0,
+        "rate": 0,
+        "rated": false,
+        "photos": [],
+        "comments": [
+            {
+                "id": 1,
+                "user": {
+                    "id": 1,
+                    "name": "Gosha Kargin",
+                    "birthday_at": null,
+                    "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+                    "vk": "https:\/\/vk.com\/id49879593",
+                    "rank": 1,
+                    "karma": 0,
+                    "entities": [],
+                    "created_at": "2020-06-06T19:20:17.000000Z",
+                    "updated_at": "2020-06-06T19:20:17.000000Z"
+                },
+                "text": "random_text",
+                "karma": 0,
+                "karmed": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            }
+        ],
+        "created_at": "2020-06-07T00:14:40.000000Z",
+        "updated_at": "2020-06-07T00:29:14.000000Z"
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/events/{event}</code></p>
@@ -714,7 +1140,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1/rate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1/rate"
 );
@@ -722,7 +1148,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -750,7 +1176,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1/unrate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1/unrate"
 );
@@ -758,7 +1184,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -785,7 +1211,7 @@ fetch(url, {
     -G "http://localhost/api/initiatives" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives"
 );
@@ -793,7 +1219,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -836,7 +1262,7 @@ fetch(url, {
     "http://localhost/api/initiatives" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -846,7 +1272,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -868,10 +1294,104 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "data": {
+        "id": null,
+        "user": {
+            "id": 1,
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": [
+                {
+                    "id": 1,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+                    "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 2,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+                    "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 3,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+                    "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 4,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+                    "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 5,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+                    "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-06T19:20:17.000000Z",
+            "updated_at": "2020-06-06T19:20:17.000000Z"
+        },
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo",
+        "title": "My cool initiative",
+        "description": "All need to eat bubblegums!",
+        "objective": "Bubblegums for everyone",
+        "goals": "Give bubblegum to me, to you and to bonch.dev",
+        "geography": "whole world",
+        "result": "bonch.dev lopnet",
+        "additional": "Why I need to comment it?",
+        "rate": 0,
+        "rated": false,
+        "status": "running",
+        "created_at": null,
+        "updated_at": null
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/initiatives</code></p>
@@ -958,7 +1478,7 @@ fetch(url, {
     -G "http://localhost/api/initiatives/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/initiatives/1"
 );
@@ -966,7 +1486,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -994,7 +1514,7 @@ fetch(url, {
     "http://localhost/api/initiatives/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool initiative","description":"All need to eat bubblegums!","video_url":"https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo","objective":"Bubblegums for everyone","goals":"Give bubblegum to me, to you and to bonch.dev","geography":"whole world","result":"bonch.dev lopnet","additional":"Why I need to comment it?"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1004,7 +1524,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1120,7 +1640,7 @@ fetch(url, {
     "http://localhost/api/media" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/media"
@@ -1129,7 +1649,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1181,7 +1701,7 @@ fetch(url, {
     "http://localhost/api/media" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/media"
@@ -1190,7 +1710,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1249,7 +1769,7 @@ fetch(url, {
     -G "http://localhost/sanctum/csrf-cookie" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/sanctum/csrf-cookie"
 );
@@ -1257,7 +1777,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1281,7 +1801,7 @@ fetch(url, {
     "http://localhost/api/posts/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1291,7 +1811,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1343,7 +1863,7 @@ fetch(url, {
     "http://localhost/api/posts/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1/karmaUp"
 );
@@ -1351,7 +1871,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1379,7 +1899,7 @@ fetch(url, {
     "http://localhost/api/posts/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1/karmaDown"
 );
@@ -1387,7 +1907,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1414,7 +1934,7 @@ fetch(url, {
     -G "http://localhost/api/posts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts"
 );
@@ -1422,7 +1942,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1465,7 +1985,7 @@ fetch(url, {
     "http://localhost/api/posts" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool post","text":"I eating bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1475,7 +1995,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1491,10 +2011,97 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (201):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "data": {
+        "id": 1,
+        "user": {
+            "id": 1,
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": [
+                {
+                    "id": 1,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+                    "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 2,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+                    "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 3,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+                    "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 4,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+                    "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 5,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+                    "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-06T19:20:17.000000Z",
+            "updated_at": "2020-06-06T19:20:17.000000Z"
+        },
+        "title": "My cool post",
+        "text": "I eating bubblegum",
+        "photos": [],
+        "comments": [],
+        "created_at": "2020-06-07T00:29:16.000000Z",
+        "updated_at": "2020-06-07T00:29:16.000000Z"
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/posts</code></p>
@@ -1545,7 +2152,7 @@ fetch(url, {
     -G "http://localhost/api/posts/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/posts/1"
 );
@@ -1553,7 +2160,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1581,7 +2188,7 @@ fetch(url, {
     "http://localhost/api/posts/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool post","text":"I eating bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1591,7 +2198,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1665,7 +2272,7 @@ fetch(url, {
     "http://localhost/api/questions/1/comment" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"text":"Bla-bla-bla-bla-string"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1675,7 +2282,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1690,10 +2297,96 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Question] 1"
+    "data": {
+        "id": null,
+        "user": {
+            "id": 1,
+            "name": "Gosha Kargin",
+            "birthday_at": null,
+            "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+            "vk": "https:\/\/vk.com\/id49879593",
+            "influence": 0,
+            "rank": 1,
+            "karma": 0,
+            "entities": [
+                {
+                    "id": 1,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+                    "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 2,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+                    "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 3,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+                    "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 4,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+                    "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                },
+                {
+                    "id": 5,
+                    "type": "event",
+                    "user_id": 1,
+                    "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+                    "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+                    "karma": 0,
+                    "rate": 0,
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:14:40.000000Z",
+                    "updated_at": "2020-06-07T00:14:40.000000Z"
+                }
+            ],
+            "created_at": "2020-06-06T19:20:17.000000Z",
+            "updated_at": "2020-06-06T19:20:17.000000Z"
+        },
+        "text": "Bla-bla-bla-bla-string",
+        "karma": 0,
+        "karmed": 0,
+        "created_at": null,
+        "updated_at": null
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/questions/{question}/comment</code></p>
@@ -1727,7 +2420,7 @@ fetch(url, {
     "http://localhost/api/questions/1/karmaUp" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/questions/1/karmaUp"
 );
@@ -1735,7 +2428,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1745,10 +2438,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Question] 1"
+    "message": "Вы не можете голосовать за свои инициативы или обращения"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/questions/{question}/karmaUp</code></p>
@@ -1763,7 +2456,7 @@ fetch(url, {
     "http://localhost/api/questions/1/karmaDown" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/questions/1/karmaDown"
 );
@@ -1771,7 +2464,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1781,10 +2474,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Question] 1"
+    "message": "Вы не можете голосовать за свои инициативы или обращения"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/questions/{question}/karmaDown</code></p>
@@ -1799,7 +2492,7 @@ fetch(url, {
     "http://localhost/api/questions/1/answer" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"question_item_id":1}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1809,7 +2502,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1824,10 +2517,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (500):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Question] 1"
+    "message": "Server Error"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/questions/{question}/answer</code></p>
@@ -1860,7 +2553,7 @@ fetch(url, {
     -G "http://localhost/api/questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/questions"
 );
@@ -1868,7 +2561,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -1881,7 +2574,328 @@ fetch(url, {
 <p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": [],
+    "data": [
+        {
+            "title": "Non consequatur sit omnis consequatur quia non. Nemo incidunt quidem voluptatem quaerat molestias. Omnis est autem qui et accusamus soluta sit.",
+            "description": "Et quis et ullam similique dolor quia. Ut nemo minus nostrum modi libero tenetur. Inventore nam est consequatur voluptatem atque voluptas.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [
+                {
+                    "text": "Illum aliquam eius sit nostrum exercitationem minima ut. Qui quidem sit impedit corrupti in. Ullam doloremque amet vel veniam. Temporibus perferendis amet non.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Laboriosam cumque velit ullam occaecati dolorem officia dignissimos magni. Fuga et molestias eligendi.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Tempora dicta aspernatur dolor. Reprehenderit ea ea impedit perspiciatis et ut. Sit non autem dolores sed. Qui et magni dignissimos vero.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                }
+            ],
+            "end_at": "2020-06-12T00:16:08.000000Z",
+            "created_at": "2020-06-07T00:16:08.000000Z",
+            "updated_at": "2020-06-07T00:16:08.000000Z"
+        },
+        {
+            "title": "Pariatur quis ratione doloribus ad at dolores. Ut corrupti tenetur totam. Voluptatem autem animi dolore eos laudantium voluptatem ut architecto. Dolores et veniam nostrum et placeat ut.",
+            "description": "Quibusdam maxime et harum et fugit autem molestiae. Quam nulla omnis distinctio recusandae laborum. Cumque id corrupti qui incidunt eaque est ab.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [
+                {
+                    "text": "Et numquam eaque eius praesentium. Excepturi sed nemo mollitia consequuntur. Dolores esse repellat atque iste unde blanditiis impedit.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Est reiciendis occaecati reprehenderit fuga quia veritatis ab. Et autem ipsum delectus deserunt. Sit ea magnam sapiente est sit error id. Repellendus tempora adipisci omnis possimus dolores.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:09.000000Z",
+                    "updated_at": "2020-06-07T00:16:09.000000Z"
+                },
+                {
+                    "text": "At est eos est odit. Impedit amet consequatur dolorum praesentium dolores. Sint neque harum ipsam mollitia consequatur.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:09.000000Z",
+                    "updated_at": "2020-06-07T00:16:09.000000Z"
+                }
+            ],
+            "end_at": "2020-06-12T00:16:08.000000Z",
+            "created_at": "2020-06-07T00:16:08.000000Z",
+            "updated_at": "2020-06-07T00:16:08.000000Z"
+        },
+        {
+            "title": "Et quae maiores maxime et. Qui eum ea odio voluptatum voluptatem et. Reiciendis illum repellendus error animi illum sint blanditiis voluptas.",
+            "description": "Ut voluptatem at et beatae nam corrupti. Suscipit corrupti nihil mollitia facere nam. Qui blanditiis est eum mollitia exercitationem quam minus.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [
+                {
+                    "text": "Fugiat perferendis et iste. Debitis vel magni amet molestiae ut quo mollitia. Aut quod eum eius corporis. Qui et commodi vitae tenetur assumenda. Aliquid qui ex nihil.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Voluptatem facilis quia officiis porro quia ullam. Inventore animi est cum quibusdam dignissimos optio odio. Assumenda itaque fuga aut sed autem.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Consequatur fuga sint qui unde illum aperiam suscipit. Error architecto recusandae ducimus vel illo. Placeat et pariatur sint tempore nam reiciendis id dicta. Eum similique animi iure dolores.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                }
+            ],
+            "end_at": "2020-06-12T00:16:08.000000Z",
+            "created_at": "2020-06-07T00:16:08.000000Z",
+            "updated_at": "2020-06-07T00:16:08.000000Z"
+        },
+        {
+            "title": "Id ducimus ratione eum. Minima facilis et at mollitia. Culpa eum ad inventore. Saepe modi et ea. Corporis atque ab sed voluptas sit veniam. Adipisci ab quas autem qui quo nihil.",
+            "description": "Placeat qui sapiente eos maxime. Blanditiis officiis sint sed voluptatum perspiciatis voluptatum. Molestiae quidem enim molestiae consequatur.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [
+                {
+                    "text": "Similique nesciunt amet asperiores excepturi. Dicta nostrum laudantium dolore illum vero ullam. Tenetur voluptatem tenetur nobis molestias illum consequatur. Voluptatibus fugit sint qui et.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Suscipit blanditiis aliquid harum molestiae quas dolorem. Corrupti est aut numquam explicabo eos.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Officiis et dolorum adipisci occaecati est repudiandae. Reiciendis quas architecto reprehenderit molestias ut neque. Nesciunt aut labore voluptates dolorem soluta id.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                }
+            ],
+            "end_at": "2020-06-12T00:16:08.000000Z",
+            "created_at": "2020-06-07T00:16:08.000000Z",
+            "updated_at": "2020-06-07T00:16:08.000000Z"
+        },
+        {
+            "title": "Id et maxime illum dolorem. Ducimus voluptatum optio est voluptatem. Beatae sed aut omnis laborum qui. Culpa pariatur iure repellat.",
+            "description": "Explicabo pariatur assumenda minima perferendis iste possimus. Non quia aperiam voluptas dolore quisquam voluptatum.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [
+                {
+                    "text": "Natus voluptas et neque aliquid ipsum. Provident natus tenetur distinctio consequatur ullam cupiditate. Voluptas delectus repellendus et voluptatem ut qui deleniti.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Et aut culpa minus esse. Ut maxime accusantium dicta quis dolorum voluptates eum. Expedita minima quisquam enim accusamus repellendus sit.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                },
+                {
+                    "text": "Veniam ut ipsam vero voluptas ut vero vel. Consequatur voluptatum ipsa quia enim corrupti beatae. Autem quo atque totam sed rerum. Possimus harum voluptatibus aut qui quo quo.",
+                    "votes_count": 0,
+                    "votes_sum": 0,
+                    "created_at": "2020-06-07T00:16:08.000000Z",
+                    "updated_at": "2020-06-07T00:16:08.000000Z"
+                }
+            ],
+            "end_at": "2020-06-12T00:16:08.000000Z",
+            "created_at": "2020-06-07T00:16:08.000000Z",
+            "updated_at": "2020-06-07T00:16:08.000000Z"
+        },
+        {
+            "title": "Et consequatur dolores ut voluptates qui quo et. Dolores consequatur minima quaerat praesentium. Sed ratione vitae et ipsa omnis quo.",
+            "description": "Dolorum corrupti autem ipsum molestiae dicta veniam. Totam totam repellat aut expedita voluptas in. Temporibus dolore rerum autem est.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:15:43.000000Z",
+            "created_at": "2020-06-07T00:15:44.000000Z",
+            "updated_at": "2020-06-07T00:15:44.000000Z"
+        },
+        {
+            "title": "Blanditiis qui eligendi culpa soluta ratione. Error qui quis quo nostrum. Ut vel quam illum est et omnis.",
+            "description": "Sunt doloremque et iste praesentium. Architecto animi illum eius labore ut. Maiores et non illum aut quia. Eos praesentium cum velit blanditiis.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:15:43.000000Z",
+            "created_at": "2020-06-07T00:15:44.000000Z",
+            "updated_at": "2020-06-07T00:15:44.000000Z"
+        },
+        {
+            "title": "Labore velit ut ut ipsam labore est vero. Et maiores laborum doloremque ut. Omnis facilis consequatur sed natus vitae.",
+            "description": "Voluptatem repellendus voluptas ut nihil aut. Dolore a eum sint nihil. Dolorem in dolore est quod.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:15:43.000000Z",
+            "created_at": "2020-06-07T00:15:43.000000Z",
+            "updated_at": "2020-06-07T00:15:43.000000Z"
+        },
+        {
+            "title": "Nesciunt accusantium ut et ad. Laborum aspernatur molestiae sed minima. Quos expedita sint et dolorum. Et ex fugiat et laudantium sequi.",
+            "description": "Vel aut rerum impedit. Earum quos assumenda reprehenderit vitae qui praesentium quis. Tempora qui est ut. Neque ex quis doloremque deserunt voluptatibus voluptatibus a.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:15:43.000000Z",
+            "created_at": "2020-06-07T00:15:43.000000Z",
+            "updated_at": "2020-06-07T00:15:43.000000Z"
+        },
+        {
+            "title": "Et architecto suscipit dicta quisquam nulla. Qui iste blanditiis libero temporibus. Cumque et reiciendis et rerum aut velit vel.",
+            "description": "Cum et quia quasi nam vel impedit. Incidunt debitis id possimus molestiae. Sed ut accusantium sed. Quo laborum aut possimus nulla eaque labore.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:15:43.000000Z",
+            "created_at": "2020-06-07T00:15:43.000000Z",
+            "updated_at": "2020-06-07T00:15:43.000000Z"
+        },
+        {
+            "title": "Officiis necessitatibus nam fuga non vel. Rem aut quaerat molestiae. Doloribus deleniti qui fuga.",
+            "description": "Omnis perspiciatis sunt iusto qui dolorem. Alias eaque voluptatem expedita officia at excepturi. Sunt voluptatem accusantium dolores cum hic mollitia eveniet.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:14:49.000000Z",
+            "created_at": "2020-06-07T00:14:49.000000Z",
+            "updated_at": "2020-06-07T00:14:49.000000Z"
+        },
+        {
+            "title": "Aut ut enim ex ea dolor ducimus. Omnis delectus sed ea consequuntur. Aut eius unde modi quis id aliquid eligendi. Autem incidunt est neque aut magnam autem.",
+            "description": "Et laudantium aut qui corporis aliquam. Ex ipsam quo exercitationem nihil soluta deleniti iure. Amet sint maxime unde architecto aut qui. Consequuntur pariatur quis ea nihil unde ex ipsa.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:14:49.000000Z",
+            "created_at": "2020-06-07T00:14:49.000000Z",
+            "updated_at": "2020-06-07T00:14:49.000000Z"
+        },
+        {
+            "title": "Illo est deserunt suscipit voluptas ea porro ducimus culpa. Ea repudiandae est doloribus optio et dolores voluptatibus. Ut animi quia laborum pariatur hic.",
+            "description": "Laudantium nesciunt iusto pariatur. Eligendi voluptatem at odit consequatur itaque vitae. Maiores illum adipisci sit aut. Architecto est facere veritatis dolores. Suscipit earum inventore tenetur.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:14:49.000000Z",
+            "created_at": "2020-06-07T00:14:49.000000Z",
+            "updated_at": "2020-06-07T00:14:49.000000Z"
+        },
+        {
+            "title": "Consequuntur nostrum nihil eligendi incidunt voluptatem optio ea. Recusandae cumque ut numquam dolorem. Et voluptas et alias aliquid voluptatum eveniet impedit. Dicta occaecati inventore eos sit.",
+            "description": "Suscipit doloribus culpa deleniti qui. Et voluptatem ut est.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:14:49.000000Z",
+            "created_at": "2020-06-07T00:14:49.000000Z",
+            "updated_at": "2020-06-07T00:14:49.000000Z"
+        },
+        {
+            "title": "Ratione non possimus quia molestiae. Molestiae est modi molestiae est adipisci nulla quia. In molestiae provident tenetur est qui assumenda non. Enim optio in necessitatibus dolores hic voluptatem.",
+            "description": "Ea cumque voluptas quis. Odio sunt minus officia et quia quod. Magnam distinctio facere fugit saepe quam est ut qui.",
+            "karma": 0,
+            "karmed": 0,
+            "votes_count": 0,
+            "votes_sum": 0,
+            "voted": false,
+            "comments": [],
+            "question_items": [],
+            "end_at": "2020-06-12T00:14:49.000000Z",
+            "created_at": "2020-06-07T00:14:49.000000Z",
+            "updated_at": "2020-06-07T00:14:49.000000Z"
+        }
+    ],
     "links": {
         "first": "http:\/\/localhost\/api\/questions?page=1",
         "last": "http:\/\/localhost\/api\/questions?page=1",
@@ -1890,12 +2904,12 @@ fetch(url, {
     },
     "meta": {
         "current_page": 1,
-        "from": null,
+        "from": 1,
         "last_page": 1,
         "path": "http:\/\/localhost\/api\/questions",
         "per_page": 15,
-        "to": null,
-        "total": 0
+        "to": 15,
+        "total": 15
     }
 }</code></pre>
 <h3>HTTP Request</h3>
@@ -1911,7 +2925,7 @@ fetch(url, {
     "http://localhost/api/questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool event","description":"We will eat bubblegum","end_at":"2020-06-08 20:20:00","items":[{"text":"Goot text"}]}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -1921,7 +2935,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -1943,10 +2957,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (500):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "message": "Server Error"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/questions</code></p>
@@ -2015,7 +3029,7 @@ fetch(url, {
     -G "http://localhost/api/questions/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/questions/1"
 );
@@ -2023,7 +3037,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -2033,10 +3047,23 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Question] 1"
+    "data": {
+        "title": "Officiis necessitatibus nam fuga non vel. Rem aut quaerat molestiae. Doloribus deleniti qui fuga.",
+        "description": "Omnis perspiciatis sunt iusto qui dolorem. Alias eaque voluptatem expedita officia at excepturi. Sunt voluptatem accusantium dolores cum hic mollitia eveniet.",
+        "karma": 0,
+        "karmed": 0,
+        "votes_count": 0,
+        "votes_sum": 0,
+        "voted": false,
+        "comments": [],
+        "question_items": [],
+        "end_at": "2020-06-12T00:14:49.000000Z",
+        "created_at": "2020-06-07T00:14:49.000000Z",
+        "updated_at": "2020-06-07T00:14:49.000000Z"
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/questions/{question}</code></p>
@@ -2051,7 +3078,7 @@ fetch(url, {
     "http://localhost/api/questions/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY" \
     -d '{"title":"My cool event","description":"We will eat bubblegum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -2061,7 +3088,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 let body = {
@@ -2077,10 +3104,23 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (404):</p>
+<p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\Question] 1"
+    "data": {
+        "title": "Officiis necessitatibus nam fuga non vel. Rem aut quaerat molestiae. Doloribus deleniti qui fuga.",
+        "description": "We will eat bubblegum",
+        "karma": 0,
+        "karmed": 0,
+        "votes_count": 0,
+        "votes_sum": 0,
+        "voted": false,
+        "comments": [],
+        "question_items": [],
+        "end_at": "2020-06-12T00:14:49.000000Z",
+        "created_at": "2020-06-07T00:14:49.000000Z",
+        "updated_at": "2020-06-07T00:29:22.000000Z"
+    }
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/questions/{question}</code></p>
@@ -2135,7 +3175,7 @@ fetch(url, {
     -G "http://localhost/api/users/me" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/users/me"
 );
@@ -2143,42 +3183,7 @@ fetch(url, {
 let headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (500):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "Server Error"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/users/me</code></p>
-<!-- END_8d1e53fcf4d2d02a6144ed392de856bf -->
-<!-- START_8653614346cb0e3d444d164579a0a0a2 -->
-<h2>Display the specified user.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/users/1" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/users/1"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
 };
 
 fetch(url, {
@@ -2200,7 +3205,186 @@ fetch(url, {
         "influence": 0,
         "rank": 1,
         "karma": 0,
-        "entities": [],
+        "entities": [
+            {
+                "id": 1,
+                "type": "event",
+                "user_id": 1,
+                "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+                "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 2,
+                "type": "event",
+                "user_id": 1,
+                "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+                "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 3,
+                "type": "event",
+                "user_id": 1,
+                "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+                "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 4,
+                "type": "event",
+                "user_id": 1,
+                "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+                "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 5,
+                "type": "event",
+                "user_id": 1,
+                "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+                "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            }
+        ],
+        "created_at": "2020-06-06T19:20:17.000000Z",
+        "updated_at": "2020-06-06T19:20:17.000000Z"
+    }
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/users/me</code></p>
+<!-- END_8d1e53fcf4d2d02a6144ed392de856bf -->
+<!-- START_8653614346cb0e3d444d164579a0a0a2 -->
+<h2>Display the specified user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/users/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/users/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": {
+        "id": 1,
+        "name": "Gosha Kargin",
+        "birthday_at": null,
+        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+        "vk": "https:\/\/vk.com\/id49879593",
+        "influence": 0,
+        "rank": 1,
+        "karma": 0,
+        "entities": [
+            {
+                "id": 1,
+                "type": "event",
+                "user_id": 1,
+                "title": "Knave. The Knave of Hearts, carrying the King's crown on a summer day: The Knave did so, very carefully, with one eye; but to get very tired of this. I vote the young lady to see what was on the.",
+                "description": "ME, and told me he was gone, and, by the end of the cakes, and was going to dive in among the distant green leaves. As there seemed to be rude, so she went on, half to itself, 'Oh dear! Oh dear! I'd.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 2,
+                "type": "event",
+                "user_id": 1,
+                "title": "Bill!' then the Mock Turtle went on. 'I do,' Alice said to herself, as she wandered about in all directions, tumbling up against each other; however, they got thrown out to be no chance of this, so.",
+                "description": "Alice. 'I'm glad they don't seem to put down the bottle, saying to herself, and began by producing from under his arm a great deal to ME,' said the Hatter: 'but you could keep it to her lips. 'I.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 3,
+                "type": "event",
+                "user_id": 1,
+                "title": "I don't like them raw.' 'Well, be off, and had to pinch it to be said. At last the Mouse, frowning, but very politely: 'Did you say things are \"much of a muchness\"--did you ever see you again, you.",
+                "description": "The further off from England the nearer is to find that she never knew so much about a foot high: then she heard something like this:-- 'Fury said to the Mock Turtle angrily: 'really you are very.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 4,
+                "type": "event",
+                "user_id": 1,
+                "title": "The Cat's head with great emphasis, looking hard at Alice the moment she quite forgot how to begin.' He looked anxiously at the window, she suddenly spread out her hand in her head, she tried hard.",
+                "description": "I should be raving mad--at least not so mad as it could go, and making quite a conversation of it in a solemn tone, only changing the order of the Gryphon, and all must have been was not quite sure.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            },
+            {
+                "id": 5,
+                "type": "event",
+                "user_id": 1,
+                "title": "Off with his head!\"' 'How dreadfully savage!' exclaimed Alice. 'That's very curious.' 'It's all his fancy, that: he hasn't got no sorrow, you know. Come on!' So they got their tails in their mouths.",
+                "description": "The master was an old conger-eel, that used to it in large letters. It was the King; and the Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at it again: but.",
+                "karma": 0,
+                "rate": 0,
+                "votes_count": 0,
+                "votes_sum": 0,
+                "created_at": "2020-06-07T00:14:40.000000Z",
+                "updated_at": "2020-06-07T00:14:40.000000Z"
+            }
+        ],
         "created_at": "2020-06-06T19:20:17.000000Z",
         "updated_at": "2020-06-06T19:20:17.000000Z"
     }
