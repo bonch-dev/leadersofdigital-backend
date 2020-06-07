@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use App\Post;
+use App\User;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
@@ -20,6 +21,18 @@ class PostResource extends JsonResource
      */
     public function toArray($request)
     {
+        /** @var User $user */
+        $user = $request->user('api');
+        $karmed = 0;
+
+        if ($user) {
+            $karma = $this->karma_items()->firstWhere('user_id', $user->id);
+
+            if ($karma) {
+                $karmed = $karma->value;
+            }
+        }
+
         return [
             'id' => $this->id,
             'user' => UserResource::make($this->user),
@@ -29,6 +42,8 @@ class PostResource extends JsonResource
             'comments' => CommentResource::collection($this->comments),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'karma' => $this->total_karma,
+            'karmed' => $karmed,
         ];
     }
 }
