@@ -56,7 +56,7 @@
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/provider/vkontakte?callback_url=molestias" \
+    -G "http://localhost/provider/vkontakte?callback_url=consectetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
@@ -65,7 +65,7 @@
 );
 
 let params = {
-    "callback_url": "molestias",
+    "callback_url": "consectetur",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -188,9 +188,11 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
-<pre><code class="language-json">1</code></pre>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Comment] 1"
+}</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/comments/{comment}/karmaUp</code></p>
 <!-- END_fe1751e75f4a4aa096e4355447bc5e8c -->
@@ -222,9 +224,11 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
-<pre><code class="language-json">1</code></pre>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Comment] 1"
+}</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/comments/{comment}/karmaDown</code></p>
 <!-- END_04d72c1cf5f64ed8b5903288b9d0031a -->
@@ -265,26 +269,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": {
-        "id": null,
-        "user": {
-            "id": 19,
-            "name": "Gosha Kargin",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "https:\/\/vk.com\/id49879593",
-            "influence": 0,
-            "rank": 1,
-            "karma": 0,
-            "entities": []
-        },
-        "text": "Bla-bla-bla-bla-string",
-        "karma": 0,
-        "karmed": 0
-    }
+    "message": "No query results for model [App\\Event] 1"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/comment</code></p>
@@ -336,9 +324,11 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
-<pre><code class="language-json">1</code></pre>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Event] 1"
+}</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/karmaUp</code></p>
 <!-- END_4b2f9b1c7c2e39989b6f10e228397c2d -->
@@ -370,9 +360,11 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
-<pre><code class="language-json">1</code></pre>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Event] 1"
+}</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/karmaDown</code></p>
 <!-- END_7b475ebb9bcd98371752157178aabdb1 -->
@@ -404,9 +396,11 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
-<pre><code class="language-json">1</code></pre>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Event] 1"
+}</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/rate</code></p>
 <!-- END_355d5dac7d3e804f83d5690f40b6f874 -->
@@ -441,7 +435,7 @@ fetch(url, {
 <p>Example response (404):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "No query results for model [App\\RateItem]."
+    "message": "No query results for model [App\\Event] 1"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events/{event}/unrate</code></p>
@@ -476,208 +470,7 @@ fetch(url, {
 <p>Example response (200):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": [
-        {
-            "id": 3,
-            "title": "Alice, she went round the table, but it all came different!' the Mock Turtle persisted. 'How COULD he turn them out of sight, he said to herself. At this the whole window!' 'Sure, it does, yer.",
-            "description": "She was walking hand in hand, in couples: they were trying which word sounded best. Some of the moment they saw her, they hurried back to my right size to do that,' said the King. (The jury all.",
-            "phone": "693-664-6659 x09180",
-            "place": "3640 DuBuque Tunnel\nWest Jarrettown, HI 10673",
-            "user": {
-                "id": 16,
-                "name": "Ms. Candida Halvorson",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 893,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 3,
-                    "user": {
-                        "id": 16,
-                        "name": "Ms. Candida Halvorson",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 893,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "title": "But do cats eat bats? Do cats eat bats, I wonder?' Alice guessed in a rather offended tone, 'was, that the meeting adjourn, for the Duchess sang the second time round, she came up to Alice, they all.",
-            "description": "And they pinched it on both sides of it; so, after hunting all about it!' and he went on, half to itself, 'Oh dear! Oh dear! I wish you wouldn't squeeze so.' said the King said gravely, 'and go on.",
-            "phone": "918-937-0338",
-            "place": "765 Keeling Mission\nSouth Camillastad, GA 63287",
-            "user": {
-                "id": 13,
-                "name": "Dr. Ola Schiller",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 341,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 4,
-                    "user": {
-                        "id": 13,
-                        "name": "Dr. Ola Schiller",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 341,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "title": "How the Owl had the best of educations--in fact, we went to him,' the Mock Turtle in the window, I only knew the name of the well, and noticed that they would go, and broke to pieces against one of.",
-            "description": "I think I can say.' This was not here before,' said Alice,) and round the table, but it just now.' 'It's the thing at all. 'But perhaps he can't help it,' said Alice, 'we learned French and music.'.",
-            "phone": "525.896.1456",
-            "place": "9263 Bruen Mountain Suite 777\nNorth Hymanmouth, RI 99325-1651",
-            "user": {
-                "id": 6,
-                "name": "Prof. Haskell Thompson I",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 407,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 5,
-                    "user": {
-                        "id": 6,
-                        "name": "Prof. Haskell Thompson I",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 407,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "title": "I don't understand. Where did they live at the Mouse's tail; 'but why do you know what \"it\" means well enough, when I got up this morning? I almost think I can guess that,' she added in an offended.",
-            "description": "Alice, feeling very glad to get hold of its mouth, and its great eyes half shut. This seemed to rise like a stalk out of the room. The cook threw a frying-pan after her as she swam lazily about in a.",
-            "phone": "(460) 532-0462",
-            "place": "87201 Kessler Stream\nFeeneyfort, GA 65472-2425",
-            "user": {
-                "id": 4,
-                "name": "Dasia Hilpert DVM",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 755,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 1,
-                    "user": {
-                        "id": 4,
-                        "name": "Dasia Hilpert DVM",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 755,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Pigeon, raising its voice to its children, 'Come away, my dears! It's high time you were INSIDE, you might like to see how he can thoroughly enjoy The pepper when he finds out who I am! But I'd.",
-            "description": "ME' beautifully printed on it in large letters. It was so much frightened to say anything. 'Why,' said the Queen. 'Sentence first--verdict afterwards.' 'Stuff and nonsense!' said Alice very meekly.",
-            "phone": "871-824-2434 x620",
-            "place": "697 Cole Dale\nNorth Devin, KY 28343",
-            "user": {
-                "id": 18,
-                "name": "Earline Orn",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 667,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 2,
-                    "user": {
-                        "id": 18,
-                        "name": "Earline Orn",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 667,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        }
-    ],
+    "data": [],
     "links": {
         "first": "http:\/\/localhost\/api\/events?page=1",
         "last": "http:\/\/localhost\/api\/events?page=1",
@@ -686,12 +479,12 @@ fetch(url, {
     },
     "meta": {
         "current_page": 1,
-        "from": 1,
+        "from": null,
         "last_page": 1,
         "path": "http:\/\/localhost\/api\/events",
         "per_page": 15,
-        "to": 5,
-        "total": 5
+        "to": null,
+        "total": 0
     }
 }</code></pre>
 <h3>HTTP Request</h3>
@@ -734,18 +527,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (422):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "The given data was invalid.",
-    "errors": {
-        "name": [
-            "The name field is required."
-        ],
-        "phone": [
-            "The phone field is required."
-        ]
-    }
+    "message": "This action is unauthorized."
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/events</code></p>
@@ -820,49 +605,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (404):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": {
-        "id": 1,
-        "title": "I don't understand. Where did they live at the Mouse's tail; 'but why do you know what \"it\" means well enough, when I got up this morning? I almost think I can guess that,' she added in an offended.",
-        "description": "Alice, feeling very glad to get hold of its mouth, and its great eyes half shut. This seemed to rise like a stalk out of the room. The cook threw a frying-pan after her as she swam lazily about in a.",
-        "phone": "(460) 532-0462",
-        "place": "87201 Kessler Stream\nFeeneyfort, GA 65472-2425",
-        "user": {
-            "id": 4,
-            "name": "Dasia Hilpert DVM",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "",
-            "rank": 1,
-            "karma": 755,
-            "entities": []
-        },
-        "karma": 0,
-        "karmed": 0,
-        "rate": null,
-        "rated": false,
-        "photos": [],
-        "comments": [
-            {
-                "id": 1,
-                "user": {
-                    "id": 4,
-                    "name": "Dasia Hilpert DVM",
-                    "birthday_at": null,
-                    "photo": "",
-                    "vk": "",
-                    "rank": 1,
-                    "karma": 755,
-                    "entities": []
-                },
-                "text": "random_text",
-                "karma": 0,
-                "karmed": 0
-            }
-        ]
-    }
+    "message": "No query results for model [App\\Event] 1"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/events/{event}</code></p>
@@ -904,10 +650,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (403):</p>
+<p>Example response (404):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "This action is unauthorized."
+    "message": "No query results for model [App\\Event] 1"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/events/{event}</code></p>
@@ -1122,34 +868,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": {
-        "id": null,
-        "user": {
-            "id": 19,
-            "name": "Gosha Kargin",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "https:\/\/vk.com\/id49879593",
-            "influence": 0,
-            "rank": 1,
-            "karma": 0,
-            "entities": []
-        },
-        "video_url": "https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo",
-        "title": "My cool initiative",
-        "description": "All need to eat bubblegums!",
-        "objective": "Bubblegums for everyone",
-        "goals": "Give bubblegum to me, to you and to bonch.dev",
-        "geography": "whole world",
-        "result": "bonch.dev lopnet",
-        "additional": "Why I need to comment it?",
-        "rate": null,
-        "rated": false,
-        "status": "running"
-    }
+    "message": "This action is unauthorized."
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/initiatives</code></p>
@@ -1547,6 +1269,392 @@ fetch(url, {
 <h3>HTTP Request</h3>
 <p><code>GET sanctum/csrf-cookie</code></p>
 <!-- END_4dfafe7f87ec132be3c8990dd1fa9078 -->
+<h1>Post</h1>
+<p>Class PostController</p>
+<!-- START_2e801dd71d2d900d8da8bd55f490d9a8 -->
+<h2>Store comment about event</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/posts/1/comment" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"text":"Bla-bla-bla-bla-string"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts/1/comment"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "text": "Bla-bla-bla-bla-string"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Post] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/posts/{post}/comment</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text</code></td>
+<td>string</td>
+<td>required</td>
+<td>Text of comment.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_2e801dd71d2d900d8da8bd55f490d9a8 -->
+<!-- START_59dc0f1a6838e9d2431348c32ba37f35 -->
+<h2>Karma up post</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/posts/1/karmaUp" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts/1/karmaUp"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Post] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/posts/{post}/karmaUp</code></p>
+<!-- END_59dc0f1a6838e9d2431348c32ba37f35 -->
+<!-- START_5c3a52895f8ead1583ef6d922f6cd01f -->
+<h2>Karma down post</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/posts/1/karmaDown" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts/1/karmaDown"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Post] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/posts/{post}/karmaDown</code></p>
+<!-- END_5c3a52895f8ead1583ef6d922f6cd01f -->
+<!-- START_da50450f1df5336c2a14a7a368c5fb9c -->
+<h2>Display a listing of the Posts.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/posts" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": [],
+    "links": {
+        "first": "http:\/\/localhost\/api\/posts?page=1",
+        "last": "http:\/\/localhost\/api\/posts?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": null,
+        "last_page": 1,
+        "path": "http:\/\/localhost\/api\/posts",
+        "per_page": 15,
+        "to": null,
+        "total": 0
+    }
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/posts</code></p>
+<!-- END_da50450f1df5336c2a14a7a368c5fb9c -->
+<!-- START_ea8d166c68ec035668ea724e12cafa45 -->
+<h2>Store a newly created Post in storage.</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/posts" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"title":"My cool post","text":"I eating bubblegum"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "title": "My cool post",
+    "text": "I eating bubblegum"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (403):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "This action is unauthorized."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/posts</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>required</td>
+<td>Title of post.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>string</td>
+<td>required</td>
+<td>Text of post.</td>
+</tr>
+<tr>
+<td><code>photos</code></td>
+<td>array</td>
+<td>optional</td>
+<td>Array of used uploaded photos.</td>
+</tr>
+<tr>
+<td><code>photos.*</code></td>
+<td>integer</td>
+<td>optional</td>
+<td>Id of uploaded photo.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_ea8d166c68ec035668ea724e12cafa45 -->
+<!-- START_726b7bf93b3209836a1cbcda5b3b6703 -->
+<h2>Display the specified Post.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/posts/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Post] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/posts/{post}</code></p>
+<!-- END_726b7bf93b3209836a1cbcda5b3b6703 -->
+<!-- START_6d1dfaf5fa710725519375063e4e9db0 -->
+<h2>Update the specified resource in storage.</h2>
+<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT \
+    "http://localhost/api/posts/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"title":"My cool post","text":"I eating bubblegum"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/posts/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "title": "My cool post",
+    "text": "I eating bubblegum"
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "No query results for model [App\\Post] 1"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/posts/{post}</code></p>
+<p><code>PATCH api/posts/{post}</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>optional</td>
+<td>Title of post.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>string</td>
+<td>optional</td>
+<td>Text of post.</td>
+</tr>
+<tr>
+<td><code>photos</code></td>
+<td>array</td>
+<td>optional</td>
+<td>Array of used uploaded photos.</td>
+</tr>
+<tr>
+<td><code>photos.*</code></td>
+<td>integer</td>
+<td>optional</td>
+<td>Id of uploaded photo.</td>
+</tr>
+</tbody>
+</table>
+<!-- END_6d1dfaf5fa710725519375063e4e9db0 -->
+<h1>Question</h1>
+<p>Class QuestionController</p>
 <!-- START_00fdf626b100d30bcd150746166ee0e9 -->
 <h2>Store comment about event</h2>
 <p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
@@ -1835,10 +1943,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (500):</p>
+<p>Example response (403):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Server Error"
+    "message": "This action is unauthorized."
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/questions</code></p>
@@ -2015,407 +2123,6 @@ fetch(url, {
 </tbody>
 </table>
 <!-- END_1bebccad423fb430073b434655c9df9e -->
-<h1>Post</h1>
-<p>Class PostController</p>
-<!-- START_2e801dd71d2d900d8da8bd55f490d9a8 -->
-<h2>Store comment about event</h2>
-<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X POST \
-    "http://localhost/api/posts/1/comment" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
-    -d '{"text":"Bla-bla-bla-bla-string"}'
-</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/1/comment"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-let body = {
-    "text": "Bla-bla-bla-bla-string"
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-    body: body
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (404):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Post] 1"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>POST api/posts/{post}/comment</code></p>
-<h4>Body Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Status</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>text</code></td>
-<td>string</td>
-<td>required</td>
-<td>Text of comment.</td>
-</tr>
-</tbody>
-</table>
-<!-- END_2e801dd71d2d900d8da8bd55f490d9a8 -->
-<!-- START_59dc0f1a6838e9d2431348c32ba37f35 -->
-<h2>Karma up post</h2>
-<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X POST \
-    "http://localhost/api/posts/1/karmaUp" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/1/karmaUp"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (404):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Post] 1"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>POST api/posts/{post}/karmaUp</code></p>
-<!-- END_59dc0f1a6838e9d2431348c32ba37f35 -->
-<!-- START_5c3a52895f8ead1583ef6d922f6cd01f -->
-<h2>Karma down post</h2>
-<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X POST \
-    "http://localhost/api/posts/1/karmaDown" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/1/karmaDown"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (404):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Post] 1"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>POST api/posts/{post}/karmaDown</code></p>
-<!-- END_5c3a52895f8ead1583ef6d922f6cd01f -->
-<!-- START_da50450f1df5336c2a14a7a368c5fb9c -->
-<h2>Display a listing of the Posts.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/posts" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (200):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "data": [],
-    "links": {
-        "first": "http:\/\/localhost\/api\/posts?page=1",
-        "last": "http:\/\/localhost\/api\/posts?page=1",
-        "prev": null,
-        "next": null
-    },
-    "meta": {
-        "current_page": 1,
-        "from": null,
-        "last_page": 1,
-        "path": "http:\/\/localhost\/api\/posts",
-        "per_page": 15,
-        "to": null,
-        "total": 0
-    }
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/posts</code></p>
-<!-- END_da50450f1df5336c2a14a7a368c5fb9c -->
-<!-- START_ea8d166c68ec035668ea724e12cafa45 -->
-<h2>Store a newly created Post in storage.</h2>
-<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X POST \
-    "http://localhost/api/posts" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
-    -d '{"title":"My cool post","text":"I eating bubblegum"}'
-</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-let body = {
-    "title": "My cool post",
-    "text": "I eating bubblegum"
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-    body: body
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (201):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "data": {
-        "id": 2,
-        "user": {
-            "id": 19,
-            "name": "Gosha Kargin",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "https:\/\/vk.com\/id49879593",
-            "influence": 0,
-            "rank": 1,
-            "karma": 0,
-            "entities": []
-        },
-        "title": "My cool post",
-        "text": "I eating bubblegum",
-        "photos": [],
-        "comments": []
-    }
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>POST api/posts</code></p>
-<h4>Body Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Status</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>title</code></td>
-<td>string</td>
-<td>required</td>
-<td>Title of post.</td>
-</tr>
-<tr>
-<td><code>text</code></td>
-<td>string</td>
-<td>required</td>
-<td>Text of post.</td>
-</tr>
-<tr>
-<td><code>photos</code></td>
-<td>array</td>
-<td>optional</td>
-<td>Array of used uploaded photos.</td>
-</tr>
-<tr>
-<td><code>photos.*</code></td>
-<td>integer</td>
-<td>optional</td>
-<td>Id of uploaded photo.</td>
-</tr>
-</tbody>
-</table>
-<!-- END_ea8d166c68ec035668ea724e12cafa45 -->
-<!-- START_726b7bf93b3209836a1cbcda5b3b6703 -->
-<h2>Display the specified Post.</h2>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/posts/1" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/1"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (404):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Post] 1"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>GET api/posts/{post}</code></p>
-<!-- END_726b7bf93b3209836a1cbcda5b3b6703 -->
-<!-- START_6d1dfaf5fa710725519375063e4e9db0 -->
-<h2>Update the specified resource in storage.</h2>
-<p><br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small></p>
-<blockquote>
-<p>Example request:</p>
-</blockquote>
-<pre><code class="language-bash">curl -X PUT \
-    "http://localhost/api/posts/1" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
-    -d '{"title":"My cool post","text":"I eating bubblegum"}'
-</code></pre>
-<pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/posts/1"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-let body = {
-    "title": "My cool post",
-    "text": "I eating bubblegum"
-}
-
-fetch(url, {
-    method: "PUT",
-    headers: headers,
-    body: body
-})
-    .then(response =&gt; response.json())
-    .then(json =&gt; console.log(json));</code></pre>
-<blockquote>
-<p>Example response (404):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "No query results for model [App\\Post] 1"
-}</code></pre>
-<h3>HTTP Request</h3>
-<p><code>PUT api/posts/{post}</code></p>
-<p><code>PATCH api/posts/{post}</code></p>
-<h4>Body Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Status</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>title</code></td>
-<td>string</td>
-<td>optional</td>
-<td>Title of post.</td>
-</tr>
-<tr>
-<td><code>text</code></td>
-<td>string</td>
-<td>optional</td>
-<td>Text of post.</td>
-</tr>
-<tr>
-<td><code>photos</code></td>
-<td>array</td>
-<td>optional</td>
-<td>Array of used uploaded photos.</td>
-</tr>
-<tr>
-<td><code>photos.*</code></td>
-<td>integer</td>
-<td>optional</td>
-<td>Id of uploaded photo.</td>
-</tr>
-</tbody>
-</table>
-<!-- END_6d1dfaf5fa710725519375063e4e9db0 -->
 <h1>User</h1>
 <p>Class UserController</p>
 <!-- START_8d1e53fcf4d2d02a6144ed392de856bf -->
@@ -2446,20 +2153,10 @@ fetch(url, {
     .then(response =&gt; response.json())
     .then(json =&gt; console.log(json));</code></pre>
 <blockquote>
-<p>Example response (200):</p>
+<p>Example response (500):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": {
-        "id": 19,
-        "name": "Gosha Kargin",
-        "birthday_at": null,
-        "photo": "",
-        "vk": "https:\/\/vk.com\/id49879593",
-        "influence": 0,
-        "rank": 1,
-        "karma": 0,
-        "entities": []
-    }
+    "message": "Server Error"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/users/me</code></p>
@@ -2496,14 +2193,16 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": {
         "id": 1,
-        "name": "Kavon Kunde",
+        "name": "Gosha Kargin",
         "birthday_at": null,
-        "photo": "",
-        "vk": "",
-        "influence": 3,
+        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+        "vk": "https:\/\/vk.com\/id49879593",
+        "influence": 0,
         "rank": 1,
-        "karma": 926,
-        "entities": []
+        "karma": 0,
+        "entities": [],
+        "created_at": "2020-06-06T19:20:17.000000Z",
+        "updated_at": "2020-06-06T19:20:17.000000Z"
     }
 }</code></pre>
 <h3>HTTP Request</h3>

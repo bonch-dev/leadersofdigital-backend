@@ -21,6 +21,12 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
 
+/**
+ * @group Question
+ *
+ * Class QuestionController
+ * @package App\Http\Controllers
+ */
 class QuestionController extends Controller
 {
     public function __construct()

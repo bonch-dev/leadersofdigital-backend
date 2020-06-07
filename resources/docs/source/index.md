@@ -31,7 +31,7 @@ Class AuthController
 
 ```bash
 curl -X GET \
-    -G "http://localhost/provider/vkontakte?callback_url=molestias" \
+    -G "http://localhost/provider/vkontakte?callback_url=consectetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
     -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
@@ -43,7 +43,7 @@ const url = new URL(
 );
 
 let params = {
-    "callback_url": "molestias",
+    "callback_url": "consectetur",
 };
 Object.keys(params)
     .forEach(key => url.searchParams.append(key, params[key]));
@@ -170,10 +170,12 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
-1
+{
+    "message": "No query results for model [App\\Comment] 1"
+}
 ```
 
 ### HTTP Request
@@ -216,10 +218,12 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
-1
+{
+    "message": "No query results for model [App\\Comment] 1"
+}
 ```
 
 ### HTTP Request
@@ -273,27 +277,11 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
 {
-    "data": {
-        "id": null,
-        "user": {
-            "id": 19,
-            "name": "Gosha Kargin",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "https:\/\/vk.com\/id49879593",
-            "influence": 0,
-            "rank": 1,
-            "karma": 0,
-            "entities": []
-        },
-        "text": "Bla-bla-bla-bla-string",
-        "karma": 0,
-        "karmed": 0
-    }
+    "message": "No query results for model [App\\Event] 1"
 }
 ```
 
@@ -341,10 +329,12 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
-1
+{
+    "message": "No query results for model [App\\Event] 1"
+}
 ```
 
 ### HTTP Request
@@ -387,10 +377,12 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
-1
+{
+    "message": "No query results for model [App\\Event] 1"
+}
 ```
 
 ### HTTP Request
@@ -433,10 +425,12 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
-1
+{
+    "message": "No query results for model [App\\Event] 1"
+}
 ```
 
 ### HTTP Request
@@ -483,7 +477,7 @@ fetch(url, {
 
 ```json
 {
-    "message": "No query results for model [App\\RateItem]."
+    "message": "No query results for model [App\\Event] 1"
 }
 ```
 
@@ -530,208 +524,7 @@ fetch(url, {
 
 ```json
 {
-    "data": [
-        {
-            "id": 3,
-            "title": "Alice, she went round the table, but it all came different!' the Mock Turtle persisted. 'How COULD he turn them out of sight, he said to herself. At this the whole window!' 'Sure, it does, yer.",
-            "description": "She was walking hand in hand, in couples: they were trying which word sounded best. Some of the moment they saw her, they hurried back to my right size to do that,' said the King. (The jury all.",
-            "phone": "693-664-6659 x09180",
-            "place": "3640 DuBuque Tunnel\nWest Jarrettown, HI 10673",
-            "user": {
-                "id": 16,
-                "name": "Ms. Candida Halvorson",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 893,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 3,
-                    "user": {
-                        "id": 16,
-                        "name": "Ms. Candida Halvorson",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 893,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "title": "But do cats eat bats? Do cats eat bats, I wonder?' Alice guessed in a rather offended tone, 'was, that the meeting adjourn, for the Duchess sang the second time round, she came up to Alice, they all.",
-            "description": "And they pinched it on both sides of it; so, after hunting all about it!' and he went on, half to itself, 'Oh dear! Oh dear! I wish you wouldn't squeeze so.' said the King said gravely, 'and go on.",
-            "phone": "918-937-0338",
-            "place": "765 Keeling Mission\nSouth Camillastad, GA 63287",
-            "user": {
-                "id": 13,
-                "name": "Dr. Ola Schiller",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 341,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 4,
-                    "user": {
-                        "id": 13,
-                        "name": "Dr. Ola Schiller",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 341,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "title": "How the Owl had the best of educations--in fact, we went to him,' the Mock Turtle in the window, I only knew the name of the well, and noticed that they would go, and broke to pieces against one of.",
-            "description": "I think I can say.' This was not here before,' said Alice,) and round the table, but it just now.' 'It's the thing at all. 'But perhaps he can't help it,' said Alice, 'we learned French and music.'.",
-            "phone": "525.896.1456",
-            "place": "9263 Bruen Mountain Suite 777\nNorth Hymanmouth, RI 99325-1651",
-            "user": {
-                "id": 6,
-                "name": "Prof. Haskell Thompson I",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 407,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 5,
-                    "user": {
-                        "id": 6,
-                        "name": "Prof. Haskell Thompson I",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 407,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "title": "I don't understand. Where did they live at the Mouse's tail; 'but why do you know what \"it\" means well enough, when I got up this morning? I almost think I can guess that,' she added in an offended.",
-            "description": "Alice, feeling very glad to get hold of its mouth, and its great eyes half shut. This seemed to rise like a stalk out of the room. The cook threw a frying-pan after her as she swam lazily about in a.",
-            "phone": "(460) 532-0462",
-            "place": "87201 Kessler Stream\nFeeneyfort, GA 65472-2425",
-            "user": {
-                "id": 4,
-                "name": "Dasia Hilpert DVM",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 755,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 1,
-                    "user": {
-                        "id": 4,
-                        "name": "Dasia Hilpert DVM",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 755,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Pigeon, raising its voice to its children, 'Come away, my dears! It's high time you were INSIDE, you might like to see how he can thoroughly enjoy The pepper when he finds out who I am! But I'd.",
-            "description": "ME' beautifully printed on it in large letters. It was so much frightened to say anything. 'Why,' said the Queen. 'Sentence first--verdict afterwards.' 'Stuff and nonsense!' said Alice very meekly.",
-            "phone": "871-824-2434 x620",
-            "place": "697 Cole Dale\nNorth Devin, KY 28343",
-            "user": {
-                "id": 18,
-                "name": "Earline Orn",
-                "birthday_at": null,
-                "photo": "",
-                "vk": "",
-                "rank": 1,
-                "karma": 667,
-                "entities": []
-            },
-            "karma": 0,
-            "karmed": 0,
-            "rate": null,
-            "rated": false,
-            "photos": [],
-            "comments": [
-                {
-                    "id": 2,
-                    "user": {
-                        "id": 18,
-                        "name": "Earline Orn",
-                        "birthday_at": null,
-                        "photo": "",
-                        "vk": "",
-                        "rank": 1,
-                        "karma": 667,
-                        "entities": []
-                    },
-                    "text": "random_text",
-                    "karma": 0,
-                    "karmed": 0
-                }
-            ]
-        }
-    ],
+    "data": [],
     "links": {
         "first": "http:\/\/localhost\/api\/events?page=1",
         "last": "http:\/\/localhost\/api\/events?page=1",
@@ -740,12 +533,12 @@ fetch(url, {
     },
     "meta": {
         "current_page": 1,
-        "from": 1,
+        "from": null,
         "last_page": 1,
         "path": "http:\/\/localhost\/api\/events",
         "per_page": 15,
-        "to": 5,
-        "total": 5
+        "to": null,
+        "total": 0
     }
 }
 ```
@@ -799,19 +592,11 @@ fetch(url, {
 ```
 
 
-> Example response (422):
+> Example response (403):
 
 ```json
 {
-    "message": "The given data was invalid.",
-    "errors": {
-        "name": [
-            "The name field is required."
-        ],
-        "phone": [
-            "The phone field is required."
-        ]
-    }
+    "message": "This action is unauthorized."
 }
 ```
 
@@ -862,50 +647,11 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (404):
 
 ```json
 {
-    "data": {
-        "id": 1,
-        "title": "I don't understand. Where did they live at the Mouse's tail; 'but why do you know what \"it\" means well enough, when I got up this morning? I almost think I can guess that,' she added in an offended.",
-        "description": "Alice, feeling very glad to get hold of its mouth, and its great eyes half shut. This seemed to rise like a stalk out of the room. The cook threw a frying-pan after her as she swam lazily about in a.",
-        "phone": "(460) 532-0462",
-        "place": "87201 Kessler Stream\nFeeneyfort, GA 65472-2425",
-        "user": {
-            "id": 4,
-            "name": "Dasia Hilpert DVM",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "",
-            "rank": 1,
-            "karma": 755,
-            "entities": []
-        },
-        "karma": 0,
-        "karmed": 0,
-        "rate": null,
-        "rated": false,
-        "photos": [],
-        "comments": [
-            {
-                "id": 1,
-                "user": {
-                    "id": 4,
-                    "name": "Dasia Hilpert DVM",
-                    "birthday_at": null,
-                    "photo": "",
-                    "vk": "",
-                    "rank": 1,
-                    "karma": 755,
-                    "entities": []
-                },
-                "text": "random_text",
-                "karma": 0,
-                "karmed": 0
-            }
-        ]
-    }
+    "message": "No query results for model [App\\Event] 1"
 }
 ```
 
@@ -958,11 +704,11 @@ fetch(url, {
 ```
 
 
-> Example response (403):
+> Example response (404):
 
 ```json
 {
-    "message": "This action is unauthorized."
+    "message": "No query results for model [App\\Event] 1"
 }
 ```
 
@@ -1192,35 +938,11 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (403):
 
 ```json
 {
-    "data": {
-        "id": null,
-        "user": {
-            "id": 19,
-            "name": "Gosha Kargin",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "https:\/\/vk.com\/id49879593",
-            "influence": 0,
-            "rank": 1,
-            "karma": 0,
-            "entities": []
-        },
-        "video_url": "https:\/\/www.youtube.com\/watch?v=Qzw6A2WC5Qo",
-        "title": "My cool initiative",
-        "description": "All need to eat bubblegums!",
-        "objective": "Bubblegums for everyone",
-        "goals": "Give bubblegum to me, to you and to bonch.dev",
-        "geography": "whole world",
-        "result": "bonch.dev lopnet",
-        "additional": "Why I need to comment it?",
-        "rate": null,
-        "rated": false,
-        "status": "running"
-    }
+    "message": "This action is unauthorized."
 }
 ```
 
@@ -1533,6 +1255,406 @@ fetch(url, {
 
 <!-- END_4dfafe7f87ec132be3c8990dd1fa9078 -->
 
+#Post
+
+
+Class PostController
+<!-- START_2e801dd71d2d900d8da8bd55f490d9a8 -->
+## Store comment about event
+
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/posts/1/comment" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"text":"Bla-bla-bla-bla-string"}'
+
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts/1/comment"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "text": "Bla-bla-bla-bla-string"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": "No query results for model [App\\Post] 1"
+}
+```
+
+### HTTP Request
+`POST api/posts/{post}/comment`
+
+#### Body Parameters
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    `text` | string |  required  | Text of comment.
+    
+<!-- END_2e801dd71d2d900d8da8bd55f490d9a8 -->
+
+<!-- START_59dc0f1a6838e9d2431348c32ba37f35 -->
+## Karma up post
+
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/posts/1/karmaUp" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts/1/karmaUp"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": "No query results for model [App\\Post] 1"
+}
+```
+
+### HTTP Request
+`POST api/posts/{post}/karmaUp`
+
+
+<!-- END_59dc0f1a6838e9d2431348c32ba37f35 -->
+
+<!-- START_5c3a52895f8ead1583ef6d922f6cd01f -->
+## Karma down post
+
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/posts/1/karmaDown" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts/1/karmaDown"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": "No query results for model [App\\Post] 1"
+}
+```
+
+### HTTP Request
+`POST api/posts/{post}/karmaDown`
+
+
+<!-- END_5c3a52895f8ead1583ef6d922f6cd01f -->
+
+<!-- START_da50450f1df5336c2a14a7a368c5fb9c -->
+## Display a listing of the Posts.
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "http://localhost/api/posts" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (200):
+
+```json
+{
+    "data": [],
+    "links": {
+        "first": "http:\/\/localhost\/api\/posts?page=1",
+        "last": "http:\/\/localhost\/api\/posts?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": null,
+        "last_page": 1,
+        "path": "http:\/\/localhost\/api\/posts",
+        "per_page": 15,
+        "to": null,
+        "total": 0
+    }
+}
+```
+
+### HTTP Request
+`GET api/posts`
+
+
+<!-- END_da50450f1df5336c2a14a7a368c5fb9c -->
+
+<!-- START_ea8d166c68ec035668ea724e12cafa45 -->
+## Store a newly created Post in storage.
+
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
+> Example request:
+
+```bash
+curl -X POST \
+    "http://localhost/api/posts" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"title":"My cool post","text":"I eating bubblegum"}'
+
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "title": "My cool post",
+    "text": "I eating bubblegum"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (403):
+
+```json
+{
+    "message": "This action is unauthorized."
+}
+```
+
+### HTTP Request
+`POST api/posts`
+
+#### Body Parameters
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    `title` | string |  required  | Title of post.
+        `text` | string |  required  | Text of post.
+        `photos` | array |  optional  | Array of used uploaded photos.
+        `photos.*` | integer |  optional  | Id of uploaded photo.
+    
+<!-- END_ea8d166c68ec035668ea724e12cafa45 -->
+
+<!-- START_726b7bf93b3209836a1cbcda5b3b6703 -->
+## Display the specified Post.
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "http://localhost/api/posts/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": "No query results for model [App\\Post] 1"
+}
+```
+
+### HTTP Request
+`GET api/posts/{post}`
+
+
+<!-- END_726b7bf93b3209836a1cbcda5b3b6703 -->
+
+<!-- START_6d1dfaf5fa710725519375063e4e9db0 -->
+## Update the specified resource in storage.
+
+<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
+> Example request:
+
+```bash
+curl -X PUT \
+    "http://localhost/api/posts/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
+    -d '{"title":"My cool post","text":"I eating bubblegum"}'
+
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/posts/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
+};
+
+let body = {
+    "title": "My cool post",
+    "text": "I eating bubblegum"
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+> Example response (404):
+
+```json
+{
+    "message": "No query results for model [App\\Post] 1"
+}
+```
+
+### HTTP Request
+`PUT api/posts/{post}`
+
+`PATCH api/posts/{post}`
+
+#### Body Parameters
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    `title` | string |  optional  | Title of post.
+        `text` | string |  optional  | Text of post.
+        `photos` | array |  optional  | Array of used uploaded photos.
+        `photos.*` | integer |  optional  | Id of uploaded photo.
+    
+<!-- END_6d1dfaf5fa710725519375063e4e9db0 -->
+
+#Question
+
+
+Class QuestionController
 <!-- START_00fdf626b100d30bcd150746166ee0e9 -->
 ## Store comment about event
 
@@ -1857,11 +1979,11 @@ fetch(url, {
 ```
 
 
-> Example response (500):
+> Example response (403):
 
 ```json
 {
-    "message": "Server Error"
+    "message": "This action is unauthorized."
 }
 ```
 
@@ -1993,419 +2115,6 @@ Parameter | Type | Status | Description
     
 <!-- END_1bebccad423fb430073b434655c9df9e -->
 
-#Post
-
-
-Class PostController
-<!-- START_2e801dd71d2d900d8da8bd55f490d9a8 -->
-## Store comment about event
-
-<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
-> Example request:
-
-```bash
-curl -X POST \
-    "http://localhost/api/posts/1/comment" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
-    -d '{"text":"Bla-bla-bla-bla-string"}'
-
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts/1/comment"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-let body = {
-    "text": "Bla-bla-bla-bla-string"
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-    body: body
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (404):
-
-```json
-{
-    "message": "No query results for model [App\\Post] 1"
-}
-```
-
-### HTTP Request
-`POST api/posts/{post}/comment`
-
-#### Body Parameters
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    `text` | string |  required  | Text of comment.
-    
-<!-- END_2e801dd71d2d900d8da8bd55f490d9a8 -->
-
-<!-- START_59dc0f1a6838e9d2431348c32ba37f35 -->
-## Karma up post
-
-<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
-> Example request:
-
-```bash
-curl -X POST \
-    "http://localhost/api/posts/1/karmaUp" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts/1/karmaUp"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (404):
-
-```json
-{
-    "message": "No query results for model [App\\Post] 1"
-}
-```
-
-### HTTP Request
-`POST api/posts/{post}/karmaUp`
-
-
-<!-- END_59dc0f1a6838e9d2431348c32ba37f35 -->
-
-<!-- START_5c3a52895f8ead1583ef6d922f6cd01f -->
-## Karma down post
-
-<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
-> Example request:
-
-```bash
-curl -X POST \
-    "http://localhost/api/posts/1/karmaDown" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts/1/karmaDown"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (404):
-
-```json
-{
-    "message": "No query results for model [App\\Post] 1"
-}
-```
-
-### HTTP Request
-`POST api/posts/{post}/karmaDown`
-
-
-<!-- END_5c3a52895f8ead1583ef6d922f6cd01f -->
-
-<!-- START_da50450f1df5336c2a14a7a368c5fb9c -->
-## Display a listing of the Posts.
-
-> Example request:
-
-```bash
-curl -X GET \
-    -G "http://localhost/api/posts" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (200):
-
-```json
-{
-    "data": [],
-    "links": {
-        "first": "http:\/\/localhost\/api\/posts?page=1",
-        "last": "http:\/\/localhost\/api\/posts?page=1",
-        "prev": null,
-        "next": null
-    },
-    "meta": {
-        "current_page": 1,
-        "from": null,
-        "last_page": 1,
-        "path": "http:\/\/localhost\/api\/posts",
-        "per_page": 15,
-        "to": null,
-        "total": 0
-    }
-}
-```
-
-### HTTP Request
-`GET api/posts`
-
-
-<!-- END_da50450f1df5336c2a14a7a368c5fb9c -->
-
-<!-- START_ea8d166c68ec035668ea724e12cafa45 -->
-## Store a newly created Post in storage.
-
-<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
-> Example request:
-
-```bash
-curl -X POST \
-    "http://localhost/api/posts" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
-    -d '{"title":"My cool post","text":"I eating bubblegum"}'
-
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-let body = {
-    "title": "My cool post",
-    "text": "I eating bubblegum"
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-    body: body
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (201):
-
-```json
-{
-    "data": {
-        "id": 2,
-        "user": {
-            "id": 19,
-            "name": "Gosha Kargin",
-            "birthday_at": null,
-            "photo": "",
-            "vk": "https:\/\/vk.com\/id49879593",
-            "influence": 0,
-            "rank": 1,
-            "karma": 0,
-            "entities": []
-        },
-        "title": "My cool post",
-        "text": "I eating bubblegum",
-        "photos": [],
-        "comments": []
-    }
-}
-```
-
-### HTTP Request
-`POST api/posts`
-
-#### Body Parameters
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    `title` | string |  required  | Title of post.
-        `text` | string |  required  | Text of post.
-        `photos` | array |  optional  | Array of used uploaded photos.
-        `photos.*` | integer |  optional  | Id of uploaded photo.
-    
-<!-- END_ea8d166c68ec035668ea724e12cafa45 -->
-
-<!-- START_726b7bf93b3209836a1cbcda5b3b6703 -->
-## Display the specified Post.
-
-> Example request:
-
-```bash
-curl -X GET \
-    -G "http://localhost/api/posts/1" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB"
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts/1"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (404):
-
-```json
-{
-    "message": "No query results for model [App\\Post] 1"
-}
-```
-
-### HTTP Request
-`GET api/posts/{post}`
-
-
-<!-- END_726b7bf93b3209836a1cbcda5b3b6703 -->
-
-<!-- START_6d1dfaf5fa710725519375063e4e9db0 -->
-## Update the specified resource in storage.
-
-<br><small style="padding: 1px 9px 2px;font-weight: bold;white-space: nowrap;color: #ffffff;-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;background-color: #3a87ad;">Requires authentication</small>
-> Example request:
-
-```bash
-curl -X PUT \
-    "http://localhost/api/posts/1" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB" \
-    -d '{"title":"My cool post","text":"I eating bubblegum"}'
-
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/posts/1"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Authorization": "Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOehP0cTENCqpbdc7fOQueeY7MB",
-};
-
-let body = {
-    "title": "My cool post",
-    "text": "I eating bubblegum"
-}
-
-fetch(url, {
-    method: "PUT",
-    headers: headers,
-    body: body
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-> Example response (404):
-
-```json
-{
-    "message": "No query results for model [App\\Post] 1"
-}
-```
-
-### HTTP Request
-`PUT api/posts/{post}`
-
-`PATCH api/posts/{post}`
-
-#### Body Parameters
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    `title` | string |  optional  | Title of post.
-        `text` | string |  optional  | Text of post.
-        `photos` | array |  optional  | Array of used uploaded photos.
-        `photos.*` | integer |  optional  | Id of uploaded photo.
-    
-<!-- END_6d1dfaf5fa710725519375063e4e9db0 -->
-
 #User
 
 
@@ -2444,21 +2153,11 @@ fetch(url, {
 ```
 
 
-> Example response (200):
+> Example response (500):
 
 ```json
 {
-    "data": {
-        "id": 19,
-        "name": "Gosha Kargin",
-        "birthday_at": null,
-        "photo": "",
-        "vk": "https:\/\/vk.com\/id49879593",
-        "influence": 0,
-        "rank": 1,
-        "karma": 0,
-        "entities": []
-    }
+    "message": "Server Error"
 }
 ```
 
@@ -2507,14 +2206,16 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "name": "Kavon Kunde",
+        "name": "Gosha Kargin",
         "birthday_at": null,
-        "photo": "",
-        "vk": "",
-        "influence": 3,
+        "photo": "https:\/\/sun9-24.userapi.com\/c638130\/v638130974\/60fa9\/wyEsaKT3baU.jpg?ava=1",
+        "vk": "https:\/\/vk.com\/id49879593",
+        "influence": 0,
         "rank": 1,
-        "karma": 926,
-        "entities": []
+        "karma": 0,
+        "entities": [],
+        "created_at": "2020-06-06T19:20:17.000000Z",
+        "updated_at": "2020-06-06T19:20:17.000000Z"
     }
 }
 ```
