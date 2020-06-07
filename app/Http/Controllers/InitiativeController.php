@@ -54,6 +54,8 @@ class InitiativeController extends Controller
 
         $initiative->user()->associate($user);
 
+        $initiative->save();
+
         $initiative->detachMedia();
 
         $initiative->attachMedia($request->photos);

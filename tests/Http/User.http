@@ -33,15 +33,14 @@ Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsR
 #    -H "Accept: application/json"
 #    -H "Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsRKZ3n346omrHg2Q5BmF25JKWs"
 #    -d '{"title":"My cool event","description":"We will eat bubblegum","place":"Moscow City","photos":[11]}'
-POST http://localhost:8000/api/events
+POST http://localhost:8000/api/posts
 Accept: application/json
-Authorization: Bearer 3|WGe07idit5UfefwNJA4iCyqP4ADHZKrTzkOjZrxigfXUMlhIMERSQrsRKZ3n346omrHg2Q5BmF25JKWs
+Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY
 Content-Type: application/json
 
 {
     "title": "My cool event",
-    "description": "We will eat bubblegum",
-    "place": "Moscow City",
+    "text": "We will eat bubblegum",
     "photos": [
     ]
 }
@@ -120,4 +119,28 @@ Authorization: Bearer 1|Sc7Jg4oNfe7euHzBMqO6212AxL42aYtb4dfu2IIsoriyLGl2tKQvzKOe
 Content-Type: application/json
 
 ###
+# curl -X POST
+#    "http://localhost/api/questions"
+#    -H "Content-Type: application/json"
+#    -H "Accept: application/json"
+#    -H "Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY"
+#    -d '{"title":"My cool event","description":"We will eat bubblegum","end_at":"2020-06-08 20:20:00","items":[{"text":"Goot text"}]}'
+POST http://localhost:8000/api/questions
+Accept: application/json
+Authorization: Bearer 2|uvlx7CKJUkTTLjujjEcU8Bsf8jg4VUUA6i9uwRe0v5T8MeKQVXWFjFaM2GhLbsg99Q5rj0kU1w4Cc5rY
+Content-Type: application/json
+
+{
+    "title": "My cool event",
+    "description": "We will eat bubblegum",
+    "end_at": "2020-06-08 20:20:00",
+    "items": [
+        {
+            "text": "Goot text"
+        }
+    ]
+}
+
+###
+
 

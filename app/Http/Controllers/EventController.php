@@ -57,11 +57,11 @@ class EventController extends Controller
 
         $event->user()->associate($user);
 
+        $event->save();
+
         $event->detachMedia();
 
         $event->attachMedia($request->photos);
-
-        $event->save();
 
         return EventResource::make($event);
     }

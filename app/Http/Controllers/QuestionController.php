@@ -62,11 +62,11 @@ class QuestionController extends Controller
 
         $question->user()->associate($user);
 
+        $question->save();
+
         $question->detachMedia();
 
         $question->attachMedia($request->photos);
-
-        $question->save();
 
         $question->question_items()->createMany($request->get('items'));
 
@@ -100,11 +100,11 @@ class QuestionController extends Controller
     {
         $question->fill($request->except(['photos']));
 
+        $question->save();
+
         $question->detachMedia();
 
         $question->attachMedia($request->photos);
-
-        $question->save();
 
         return QuestionResource::make($question);
     }
