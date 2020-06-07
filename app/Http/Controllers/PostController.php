@@ -108,6 +108,8 @@ class PostController extends Controller
 
         $comment = Comment::create($request->validated());
 
+        $comment->user()->associate($request->user());
+
         $comment->commentable()->associate($post);
 
         return CommentResource::make($comment);
