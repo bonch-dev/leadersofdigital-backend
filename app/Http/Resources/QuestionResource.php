@@ -46,6 +46,7 @@ class QuestionResource extends JsonResource
             'votes_count' => $this->votes_count,
             'votes_sum' => $this->votes_sum,
             'voted' => $voted,
+            'user' => UserResource::make($this->user),
             'comments' => CommentResource::collection($this->comments),
             'question_items' => QuestionItemResource::collection($this->question_items),
             'end_at' => $this->end_at,
