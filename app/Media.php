@@ -53,6 +53,11 @@ class Media extends BaseMedia
         return $this->morphedByMany(Post::class, 'mediable');
     }
 
+    public function questions()
+    {
+        return $this->morphedByMany(Question::class, 'mediable');
+    }
+
     public function scopeNotUsed(Builder $builder)
     {
         return $builder
