@@ -8,7 +8,7 @@ variables:
   ### 1. CHANGE THIS TO "statefulset"
   ### 2. CHANGE "pvc.enabled" TO "true" IN /chart/values.yaml
   ### 3. DEFINE "pvc.size" HOW MUCH YOU NEED (pls, max 20Gi)
-  ROLLOUT_RESOURCE_TYPE: deployment
+  ROLLOUT_RESOURCE_TYPE: statefulset
   ####################################
   ### End of Stateful data message ###
   ####################################

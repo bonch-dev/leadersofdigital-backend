@@ -88,8 +88,8 @@ resources:
 #    cpu: 100m
 #    memory: 128Mi
 pvc:
-  enabled: false
-  size: 15Gi
+  enabled: true
+  size: 2Gi
 
 ## Configure PodDisruptionBudget
 ## ref: https://kubernetes.io/docs/concepts/workloads/pods/disruptions/
