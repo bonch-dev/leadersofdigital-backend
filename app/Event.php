@@ -52,6 +52,8 @@ use Optix\Media\HasMedia;
  */
 class Event extends Model
 {
+    use HasMedia;
+
     protected static function boot()
     {
         parent::boot();
@@ -60,8 +62,6 @@ class Event extends Model
             $builder->orderBy('created_at', 'desc');
         });
     }
-
-    use HasMedia;
 
     protected $with = [
         'user',

@@ -51,6 +51,8 @@ use Optix\Media\HasMedia;
  */
 class Initiative extends Model
 {
+    use HasMedia;
+
     protected static function boot()
     {
         parent::boot();
@@ -59,8 +61,6 @@ class Initiative extends Model
             $builder->orderBy('created_at', 'desc');
         });
     }
-
-    use HasMedia;
 
     protected $with = [
         'user',

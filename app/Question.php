@@ -49,6 +49,8 @@ use Optix\Media\HasMedia;
  */
 class Question extends Model
 {
+    use HasMedia;
+
     protected static function boot()
     {
         parent::boot();
@@ -58,7 +60,6 @@ class Question extends Model
         });
     }
 
-    use HasMedia;
     //
     protected $fillable = [
         'title',

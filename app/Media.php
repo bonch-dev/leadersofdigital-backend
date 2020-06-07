@@ -58,6 +58,11 @@ class Media extends BaseMedia
         return $this->morphedByMany(Question::class, 'mediable');
     }
 
+    public function initiatives()
+    {
+        return $this->morphedByMany(Initiative::class, 'mediable');
+    }
+
     public function scopeNotUsed(Builder $builder)
     {
         return $builder
