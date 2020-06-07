@@ -122,11 +122,13 @@ class QuestionController extends Controller
     {
         $this->authorize('comment', [Question::class, $question]);
 
-        $comment = Comment::create($request->validated());
+        $comment = Comment::make($request->validated());
 
         $comment->user()->associate($request->user());
 
         $comment->commentable()->associate($question);
+
+        $comment->save();
 
         return CommentResource::make($comment);
     }

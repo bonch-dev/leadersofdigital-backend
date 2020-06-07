@@ -115,11 +115,13 @@ class EventController extends Controller
     {
         $this->authorize('comment', [Event::class, $event]);
 
-        $comment = Comment::create($request->validated());
+        $comment = Comment::make($request->validated());
 
         $comment->user()->associate($request->user());
 
         $comment->commentable()->associate($event);
+
+        $comment->save();
 
         return CommentResource::make($comment);
     }

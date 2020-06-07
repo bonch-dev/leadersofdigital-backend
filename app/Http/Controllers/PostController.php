@@ -106,11 +106,13 @@ class PostController extends Controller
     {
         $this->authorize('comment', [Post::class, $post]);
 
-        $comment = Comment::create($request->validated());
+        $comment = Comment::make($request->validated());
 
         $comment->user()->associate($request->user());
 
         $comment->commentable()->associate($post);
+
+        $comment->save();
 
         return CommentResource::make($comment);
     }
