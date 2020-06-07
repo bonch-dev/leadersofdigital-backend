@@ -161,4 +161,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(KarmaItem::class);
     }
+
+    public function questions(): HasMany
+    {
+        return $this->hasMany(Question::class);
+    }
 }

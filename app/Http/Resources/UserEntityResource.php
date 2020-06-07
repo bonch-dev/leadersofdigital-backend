@@ -30,6 +30,8 @@ class UserEntityResource extends JsonResource
             'description' => $this->description,
             'karma' => $this->total_karma ?? 0,
             'rate' => $this->rate ?? 0,
+            'votes_count' => $this->votes_count ?? 0,
+            'votes_sum' => $this->votes_sum ?? 0,
 
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,

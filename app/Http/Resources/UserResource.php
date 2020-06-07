@@ -56,6 +56,15 @@ class UserResource extends JsonResource
             );
         }
 
+        if ($this->relationLoaded('questions')) {
+            $entities->merge(
+                UserEntityResource::collection($this->questions)
+                    ->additional([
+                        'type' => 'question',
+                    ])
+            );
+        }
+
         $entities = $entities->sortByDesc(function ($item, $key) {
             return $item->created_at->unix();
         })->values();
